@@ -1,0 +1,100 @@
+body {
+    padding-top: 70px;
+}
+
+#sidebar .list-group, #sidebar .list-group-item {
+    background-color: transparent;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.tag-1 {
+    font-size: 13pt;
+}
+
+.tag-2 {
+    font-size: 10pt;
+}
+
+.tag-2 {
+    font-size: 8pt;
+}
+
+.tag-4 {
+    font-size: 6pt;
+}
+
+#sidebar {
+    padding-top: 0px;
+}
+
+#sidebar a {
+    color: inherit;
+}
+
+i {
+    margin-right: 10px;
+}
+
+a, a:hover {
+    color: inherit;
+}
+
+.entry-content a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.entry-content a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.highlight pre {
+    background-color: #202020;
+    color: #777;
+}
+
+#categories ul, #tags ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+/*Random Guff*/
+a, h1, h2, h3, h4, h5, h6 { color: #700065;}
+a:hover { color: #006570; }
+
+
+/*body { font-family: 'georgia', serif;}*/
+/*a, h1, h2, h3, h4, h5, h6 {font-family: 'georgia', serif; color: #700065;}*/
+/*body    { margin: 10pt; padding: 20pt; }*/
+
+/*pre, code, tt   { font-family: 'Courier New';*/
+/*                  font-size: 0.82em;*/
+/*                }*/
+/*pre             { line-height: 1.5; border: 2px solid #ddd; padding: 10px;*/
+/*                  /* background: #fafafa; */*/
+/*                  background-color: #eef;*/
+/*                  -moz-border-radius-bottomleft: 10px;*/
+/*                  -webkit-border-bottom-left-radius: 10px;*/
+/*                  -moz-border-radius-bottomright: 10px;*/
+/*                  -webkit-border-bottom-right-radius: 40px;*/
+/*                  -moz-border-radius-topleft: 10px;*/
+/*                  -webkit-border-top-left-radius: 10px;*/
+/*                  -moz-border-radius-topright: 10px;*/
+/*                  -webkit-border-top-right-radius: 40px;*/
+/*                }*/
+/*                */
+
+/*div.entry-overview div.detail       { color : #888; margin-left: 140px; }*/
+/*div.entry-overview div.date         { float: left; width: 120px; color: #888;*/
+/*                                      text-align: left; font-style: italic; }*/
+
