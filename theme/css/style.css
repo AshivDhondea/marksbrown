@@ -67,34 +67,3 @@ a, a:hover {
     padding: 0;
     margin-left: 0;
 }
-
-/*Random Guff*/
-a, h1, h2, h3, h4, h5, h6 { color: #700065;}
-a:hover { color: #006570; }
-
-
-/*body { font-family: 'georgia', serif;}*/
-/*a, h1, h2, h3, h4, h5, h6 {font-family: 'georgia', serif; color: #700065;}*/
-/*body    { margin: 10pt; padding: 20pt; }*/
-
-/*pre, code, tt   { font-family: 'Courier New';*/
-/*                  font-size: 0.82em;*/
-/*                }*/
-/*pre             { line-height: 1.5; border: 2px solid #ddd; padding: 10px;*/
-/*                  /* background: #fafafa; */*/
-/*                  background-color: #eef;*/
-/*                  -moz-border-radius-bottomleft: 10px;*/
-/*                  -webkit-border-bottom-left-radius: 10px;*/
-/*                  -moz-border-radius-bottomright: 10px;*/
-/*                  -webkit-border-bottom-right-radius: 40px;*/
-/*                  -moz-border-radius-topleft: 10px;*/
-/*                  -webkit-border-top-left-radius: 10px;*/
-/*                  -moz-border-radius-topright: 10px;*/
-/*                  -webkit-border-top-right-radius: 40px;*/
-/*                }*/
-/*                */
-
-/*div.entry-overview div.detail       { color : #888; margin-left: 140px; }*/
-/*div.entry-overview div.date         { float: left; width: 120px; color: #888;*/
-/*                                      text-align: left; font-style: italic; }*/
-
