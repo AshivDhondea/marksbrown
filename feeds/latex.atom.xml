@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>markbrown.io</title><link href="http://markbrown.io/" rel="alternate"></link><link href="http://markbrown.io/feeds/latex.atom.xml" rel="self"></link><id>http://markbrown.io/</id><updated>2013-07-14T00:00:00+02:00</updated><entry><title>University College London Beamer Template</title><link href="http://markbrown.io/university-college-london-beamer-template.html" rel="alternate"></link><updated>2013-07-14T00:00:00+02:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-07-14:university-college-london-beamer-template.html</id><summary type="html">&lt;img alt="Ugly, yellow example image" src="/images/beamerexample.png" style="width: 80%;" /&gt;
+&lt;p&gt;In this post I&amp;#8217;ll briefly go over my &lt;span class="caps"&gt;UCL&lt;/span&gt; template for Beamer&amp;nbsp;presentations.&lt;/p&gt;
+&lt;p&gt;Why &lt;a class="reference external" href="http://www.latex-project.org/"&gt;LaTeX&lt;/a&gt;?&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Neat Equation&amp;nbsp;formatting&lt;/li&gt;
+&lt;li&gt;Excellent&amp;nbsp;typesetting&lt;/li&gt;
+&lt;li&gt;pdf files work&amp;nbsp;anywhere&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Why &lt;a class="reference external" href="http://www.math.umbc.edu/~rouben/beamer/"&gt;Beamer&lt;/a&gt;?&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Images and equations very quickly turned into a&amp;nbsp;presentation&lt;/li&gt;
+&lt;li&gt;Font sizes are always&amp;nbsp;sensible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Why &lt;a class="reference external" href="http://en.wikipedia.org/wiki/XeTeX"&gt;XeTeX&lt;/a&gt;?&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Free choice of any font&amp;nbsp;installed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So to begin we will need to ensure an upto date distribution of LaTeX installed. On ubuntu this is&amp;nbsp;simply:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install texlive-full
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Alternatively head to &lt;a class="reference external" href="http://www.tug.org/texlive/"&gt;texlive&lt;/a&gt; and follow the appropriate instructions for your system. The template given here builds upon the lovely code from &lt;a class="reference external" href="http://www.ucl.ac.uk/~ucbpeal/latexposter.html"&gt;Ed Long&lt;/a&gt;. The main difference when it comes to using XeTeX with beamer is we&amp;nbsp;add&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;\setallmainfonts&lt;/span&gt;(Digits,Latin)&lt;span class="nb"&gt;{&lt;/span&gt;&amp;lt;&lt;span class="caps"&gt;FONTNAME&lt;/span&gt;&amp;gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;to update the main font to our choice. In this case we&amp;#8217;re not changing the font mathematics will appear in, purely because most fonts won&amp;#8217;t render very nicely. Throughout the template we set the colour of the &lt;span class="caps"&gt;UCL&lt;/span&gt; header and the text colour the same. The first step in setting that colour&amp;nbsp;is&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;\definecolor&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;maincolour&lt;span class="nb"&gt;}{&lt;/span&gt;rgb&lt;span class="nb"&gt;}{&lt;/span&gt;&amp;lt;&lt;span class="caps"&gt;COLOUR&lt;/span&gt;&amp;gt;&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Compiling our presentation file uses the following&amp;nbsp;command&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;xelatex &amp;lt;PRESENTATION&amp;gt;.tex
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The link to the actual code is at the bottom of the post. Before then I&amp;#8217;ll quickly go over an example. And remember - &lt;span class="caps"&gt;UCL&lt;/span&gt; does technically have a style guide, use to grab some interesting colours (and perhaps ignore their font choice). So to begin grab a copy of the code from :
+&lt;a class="reference external" href="https://github.com/marksbrown/xetextemplate"&gt;https://github.com/marksbrown/xetextemplate&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="designing-our-slides"&gt;
+&lt;h2&gt;Designing our&amp;nbsp;slides&lt;/h2&gt;
+&lt;p&gt;This is pretty much choosing a colour and font we like. Preferably both being clear and clean to read. For this example we&amp;#8217;ll choose &amp;#8220;Norasi&amp;#8221; as the font and a lovely olive green. The first thing to be done is updating the colour of the &lt;span class="caps"&gt;UCL&lt;/span&gt; header. With the files in images/svg lies &amp;#8216;uclheader.svg&amp;#8217;. I&amp;#8217;d recommend opening this up in Inkscape and changing the colour of both elements to your colour of choice using the &amp;#8216;fill and stroke&amp;#8217;. Following this, save a pdf copy to the images/pdf and voila! Step one&amp;nbsp;done.&lt;/p&gt;
+&lt;p&gt;Next we need to make a note of the colour we&amp;#8217;ve just&amp;nbsp;selected.&lt;/p&gt;
+&lt;img alt="inkscape fill and stroke with a colour green" src="/images/acolourgreen.png" style="width: 40%;" /&gt;
+&lt;p&gt;For LaTeX we divide the &lt;span class="caps"&gt;RGB&lt;/span&gt; by 255 to give our colour&amp;nbsp;as&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;\definecolor&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;maincolour&lt;span class="nb"&gt;}{&lt;/span&gt;rgb&lt;span class="nb"&gt;}{&lt;/span&gt;0,0.47,0.13&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With the font updated to our choice we arrive at our new&amp;nbsp;theme&lt;/p&gt;
+&lt;img alt="Marginally less ugly green example image" src="/images/anotherbeamerexample.png" style="width: 70%;" /&gt;
+&lt;p&gt;Enjoy playing&amp;nbsp;around!&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry></feed>
