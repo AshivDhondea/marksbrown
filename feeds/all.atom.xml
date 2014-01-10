@@ -112,7 +112,7 @@ scintillator crystal is given. Finally we will look at the varying contribution 
 &lt;/div&gt;
 &lt;div class="section" id="crlb-with-light-transport"&gt;
 &lt;h2&gt;&lt;span class="caps"&gt;CRLB&lt;/span&gt; With Light&amp;nbsp;Transport&lt;/h2&gt;
-&lt;p&gt;Firstly see &lt;a class="reference external" href="http://markbrown.io/ccc/lightransport.html"&gt;light transport&lt;/a&gt; for the analytical light transport&amp;nbsp;derivation.&lt;/p&gt;
+&lt;!-- Firstly see `light transport &lt;|filename|lighttransport.rst&gt;`_ for the analytical light transport derivation. &amp;#8212;&gt;
 &lt;img alt="CRLB with Light Transport for varying scintillator crystal lengths" class="align-center" src="../images/SpecularPDFRelfectivity0-0.png" style="width: 100%;" /&gt;
 &lt;p&gt;Using the analytical expression of the light transport the &lt;span class="caps"&gt;CRLB&lt;/span&gt; with each contribution convolved in sequence for each scintillator crystal&amp;nbsp;length.&lt;/p&gt;
 &lt;/div&gt;
