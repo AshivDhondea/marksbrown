@@ -19,3 +19,8 @@ pre { line-height: 1.5; border: 2px solid #ddd; padding: 10px;
                   -moz-border-radius-topright: 10px;
                   -webkit-border-top-right-radius: 40px;
                 }
+
+sidebar.hidden-print {
+    display: none !important;
+}
+
