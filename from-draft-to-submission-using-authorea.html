@@ -3,8 +3,30 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
+    
+    <script type= "text/javascript">
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.src = 'https:' == document.location.protocol ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js' : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'; 
+        s[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" + 
+            "    config: ['MMLorHTML.js']," + 
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS','output/NativeMML']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," + 
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax .mo, .MathJax .mi': {color: 'black ! important'}} " +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(s);
+    </script>
 
-    <title>markbrown.io - scintillator</title>
+
+    <title>From Draft to Submission : Using&nbsp;Authorea</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -12,10 +34,10 @@
 
     <!-- Open Graph tags -->
 
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="markbrown.io"/>
-            <meta property="og:url" content="http://markbrown.io"/>
-            <meta property="og:description" content="markbrown.io"/>
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="From Draft to Submission : Using&nbsp;Authorea"/>
+            <meta property="og:url" content="http://markbrown.io/from-draft-to-submission-using-authorea.html"/>
+            <meta property="og:description" content="I’ve been using LaTeX for a while now but as anyone who uses the tool knows, it can be painful at times. Large documents can quickly become unamenable to editing and addition. The fact that most people learn informally as a de-facto method of improving their ‘presentation’ score on ..."/>
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="http://markbrown.io/theme/css/bootstrap.simplex.min.css" type="text/css"/>
@@ -78,17 +100,61 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-9">
-            <article>
-                <div class=entry-overview>
-                    <div class=date>28 Nov 2013 </div>
-                    <h2><a href="http://markbrown.io/ccc/">Crystal Clear&nbsp;Collaboration</a></h2>
-                    
-                    <div class="summary">Interesting results calculated for the Crystal Clear Collaboration meeting at CERN in November 2013
-                        <a class="btn btn-default btn-xs" href="http://markbrown.io/ccc/">more ...</a>
-                    </div>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://markbrown.io/from-draft-to-submission-using-authorea.html"
+                       rel="bookmark"
+                       title="Permalink to From Draft to Submission : Using&nbsp;Authorea">
+                        From Draft to Submission : Using&nbsp;Authorea
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="icon-calendar"></i>Sun 27 January 2013
+    </span>
+
+
+
+</footer><!-- /.post-info -->                    </div>
                 </div>
-            </article>
-            <hr/>
+                <p>I&#8217;ve been using LaTeX for a while now but as anyone who uses the tool knows,
+it can be painful at times. Large documents can quickly become unamenable to editing
+and addition. The fact that most people learn informally as a de-facto method of improving
+their &#8216;presentation&#8217; score on whatever respective undergraduate assignment given to
+them does not&nbsp;help.</p>
+<p>From that however the equation formatting, the ease of being able to edit figures
+independently of LaTeX and frankly the ability to (cross-)reference effortlessly
+has made be thankful daily for learning to use the tool&nbsp;compentently.</p>
+<p>However in the time spent during my PhD, I&#8217;ve come to rather dislike communal editing.
+The dozens of paper versions impossibly attempting to recombine in a sane manner is quite
+frankly a ridiculous time sink. Even worse, how many people actually perform version
+control upon their own LaTeX&nbsp;documents?</p>
+<p>It&#8217;s with this in mind, in December I began writing a paper on experiment results
+I&#8217;d been able to collect with the kind assistance of the <span class="caps">PH</span>-<span class="caps">CMX</span> group at <span class="caps">CERN</span>. Given
+the dozen or so individuals involved with the work and given my fear of the above, I
+decided to give authorea a&nbsp;shot.</p>
+<p>The tool breaks a research paper into cells, each containing text, equations, graphs
+or tables. Anything we need, anything we could show in a paper. All text cells are included
+in the root directory. Figures in recursively named directories in the <a href="#id1"><span class="problematic" id="id2">`</span></a>figure&#8217; directory. Everything is cellotaped together to produce the paper in web version you can see. Exporting to different journal formats is certainly a useful first step, however I&#8217;ve yet to find a single format that didn&#8217;t need a subsequent bit of hammering. No doubt something that will be fixed in the months and years to&nbsp;come.</p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: <span class="caps">WARNING</span>/2 (<tt class="docutils">/home/mark/Desktop/Dropbox/markbrown.io/content/research/authorea.rst</tt>, line 27); <em><a href="#id2">backlink</a></em></p>
+Inline interpreted text or phrase reference start-string without end-string.</div>
+<p>The main thing that has made this tool invaluable to myself is the ability to edit the paper
+from the raw information contained in a git repository. Replacing figures or updating tables can be as simple as copying and pasting the required information. There&#8217;s also the side that we can leverage existing tools to get the job done much more efficiently. Why type out a large table and calculate errors by hand when we can do so by a combination of Python packages? Why waste time changing the font size of every single graph, individually when we can use rc parameters in an ipython notebook to accomplish the job at a single&nbsp;stroke.</p>
+<p>Whether these benefits add up in time I&#8217;m not so sure. Many academics prefer (perhaps rightly) to read research articles on paper - An outcome authorea is currently difficult to convince into. Many more academics are uncomfortable with the technical side of editting a document in this fashion. For my part I believe part of moving away from the research journal market we&#8217;ve allowed to arise, is to make academic publishing as easy as writing a blog&nbsp;post.</p>
+
+            </div>
+            <!-- /.entry-content -->
+<!--            -->
+        </article>
+    </section>
 
         </div>
         <div class="col-lg-3 well well-sm" id="sidebar">
