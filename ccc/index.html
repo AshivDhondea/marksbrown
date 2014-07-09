@@ -3,30 +3,8 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    
-    <script type= "text/javascript">
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = 'https:' == document.location.protocol ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js' : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'; 
-        s[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" + 
-            "    config: ['MMLorHTML.js']," + 
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS','output/NativeMML']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," + 
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax .mo, .MathJax .mi': {color: 'black ! important'}} " +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(s);
-    </script>
 
-
-    <title>Crystal Clear&nbsp;Collaboration</title>
+    <title>Crystal Clear Collaboration</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -35,7 +13,7 @@
     <!-- Open Graph tags -->
 
             <meta property="og:type" content="article"/>
-            <meta property="og:title" content="Crystal Clear&nbsp;Collaboration"/>
+            <meta property="og:title" content="Crystal Clear Collaboration"/>
             <meta property="og:url" content="http://markbrown.io/ccc/"/>
             <meta property="og:description" content="The Crystal Clear Collaboration (CCC) homepage may be found here. Overview On this page results relating to the lower bound in the timing performance of scintillator detectors is given. We will first look at the intrinsic performance due to the material. Following this, analytical results pertaining to the light transport ..."/>
 
@@ -85,7 +63,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li><a href="http://markbrown.io/about/">About</a></li>
-                        <li><a href="http://markbrown.io/cv/">Curriculum&nbsp;Vitae</a></li>
+                        <li><a href="http://markbrown.io/cv/">Curriculum Vitae</a></li>
                         <li><a href="http://markbrown.io/research/">Research</a></li>
                         <li><a href="http://markbrown.io/tutoring/">Tutoring</a></li>
             </ul>
@@ -106,8 +84,8 @@
                 <h1>
                     <a href="http://markbrown.io/ccc/"
                        rel="bookmark"
-                       title="Permalink to Crystal Clear&nbsp;Collaboration">
-                        Crystal Clear&nbsp;Collaboration
+                       title="Permalink to Crystal Clear Collaboration">
+                        Crystal Clear Collaboration
                     </a>
                 </h1>
             </header>
@@ -143,13 +121,13 @@ scintillator crystal is given. Finally we will look at the varying contribution 
 <div class="section" id="intrinsic-performance">
 <h2>Intrinsic&nbsp;Performance</h2>
 <img alt="intrinsic CRLB with N" class="align-center" src="../images/intrinsicCRLBwithN.png" style="width: 100%;" />
-<p>In the above image we calculate the lower bound in the <span class="caps">CTR</span> (the <span class="caps">CRLB</span> <span class="caps">CTR</span>) with increasing number of samples, <em>N</em>. The curve(s) follows the characteristic $\frac{1}{\sqrt{N}}$ shape we&nbsp;expect.</p>
+<p>In the above image we calculate the lower bound in the <span class="caps">CTR</span> (the <span class="caps">CRLB</span> <span class="caps">CTR</span>) with increasing number of samples, <em>N</em>. The curve(s) follows the characteristic <mathjax>$\frac{1}{\sqrt{N}}$</mathjax> shape we&nbsp;expect.</p>
 <img alt="intrinsic CRLB with various rise &amp; decay times" class="align-center" src="../images/intrinsicCRLBwithDecayRise.png" style="width: 50%;" />
-<p>Next we look at varying the rise and decay times directly. In this case we fix $N=3600$. This is chosen as it matches the number of pixels within <a class="reference external" href="http://www.hamamatsu.com/eu/en/product/alpha/P/4113/S10931-050P/index.html">mppc</a>. In this case we a clear improvement with reductions in the rise and decay&nbsp;time.</p>
+<p>Next we look at varying the rise and decay times directly. In this case we fix <mathjax>$N=3600$</mathjax>. This is chosen as it matches the number of pixels within <a class="reference external" href="http://www.hamamatsu.com/eu/en/product/alpha/P/4113/S10931-050P/index.html">mppc</a>. In this case we a clear improvement with reductions in the rise and decay&nbsp;time.</p>
 </div>
 <div class="section" id="crlb-with-light-transport">
 <h2><span class="caps">CRLB</span> With Light&nbsp;Transport</h2>
-<!-- Firstly see `light transport <|filename|lighttransport.rst>`_ for the analytical light transport derivation. &#8212;>
+<!-- Firstly see `light transport <|filename|lighttransport.rst>`_ for the analytical light transport derivation. -->
 <img alt="CRLB with Light Transport for varying scintillator crystal lengths" class="align-center" src="../images/SpecularPDFRelfectivity0-0.png" style="width: 100%;" />
 <p>Using the analytical expression of the light transport the <span class="caps">CRLB</span> with each contribution convolved in sequence for each scintillator crystal&nbsp;length.</p>
 </div>
@@ -157,12 +135,42 @@ scintillator crystal is given. Finally we will look at the varying contribution 
 <h2><span class="caps">CRLB</span> With&nbsp;Photodetector</h2>
 <img alt="CRLB with photodetector. Varying TTS" class="align-center" src="../images/pmtCRLBwithTTS.png" style="width: 100%;" />
 <p>We convolve the dual exponential distribution describing the scintillator crystal with a gaussian to describe the single photon
-time spread, with <span class="caps">FWHM</span> given by the Single Photon Time Resolution (<span class="caps">SPTR</span>) within the photodetector. The number of samples $N$ is fixed at 3600 and we vary the <span class="caps">SPTR</span>. In this case it&#8217;s clear the decay time - L(Y)<span class="caps">SO</span>:Ce of 40ns compared to 30ns of <span class="caps">LSO</span>:CeCa has a large&nbsp;effect.</p>
+time spread, with <span class="caps">FWHM</span> given by the Single Photon Time Resolution (<span class="caps">SPTR</span>) within the photodetector. The number of samples <mathjax>$N$</mathjax> is fixed at 3600 and we vary the <span class="caps">SPTR</span>. In this case it&#8217;s clear the decay time - L(Y)<span class="caps">SO</span>:Ce of 40ns compared to 30ns of <span class="caps">LSO</span>:CeCa has a large&nbsp;effect.</p>
 <img alt="skew normal distribution" class="align-center" src="../images/skewnormaldist.png" style="width: 100%;" />
 <p>Next we look at a non-symmetric <span class="caps">SPTR</span> distribution; Namely the skew-normal distribution shown above in red for negative skew and in blue for positive. The green line indicates the normal&nbsp;Gaussian.</p>
 <img alt="CRLB for non-zero skew with increasing FWHM" class="align-center" src="../images/pmtCRLBwithFWHM.png" style="width: 100%;" />
-<p>Above we use the skew-normal distribution for various <span class="caps">FWHM</span> values to determine the <span class="caps">CRLB</span> with skew. As the <span class="caps">FWHM</span> of the <span class="caps">SPTR</span> distribution will vary with skew we see that the skewness must be determind to accurately predict the&nbsp;<span class="caps">CRLB</span>.</p>
+<p>Above we use the skew-normal distribution for various <span class="caps">FWHM</span> values to determine the <span class="caps">CRLB</span> with skew. As the <span class="caps">FWHM</span> of the <span class="caps">SPTR</span> distribution will vary with skew we see that the skewness must be determind to accurately predict the <span class="caps">CRLB</span>.</p>
 </div>
+<script type= "text/javascript">
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+</script>
 
             </div>
             <!-- /.entry-content -->
@@ -171,8 +179,8 @@ time spread, with <span class="caps">FWHM</span> given by the Single Photon Time
     </section>
 
         </div>
-        <div class="col-lg-3 well well-sm" id="sidebar">
-<aside>
+        <div class="col-lg-3 well well-sm hidden-print" id="sidebar">
+<aside class='hidden-print'>
     <section>
 
             <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Contact Me</h4></li>
@@ -205,8 +213,8 @@ time spread, with <span class="caps">FWHM</span> given by the Single Photon Time
 <!--            <li class="list-group-item"><a href="http://markbrown.io/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/specular.html">-->
-<!--                        specular-->
+<!--                    <a href="http://markbrown.io/tag/crlb.html">-->
+<!--                        crlb-->
 <!--                    </a>-->
 <!--                </li>-->
 <!--            -->
@@ -223,8 +231,8 @@ time spread, with <span class="caps">FWHM</span> given by the Single Photon Time
 <!--                </li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/crlb.html">-->
-<!--                        crlb-->
+<!--                    <a href="http://markbrown.io/tag/specular.html">-->
+<!--                        specular-->
 <!--                    </a>-->
 <!--                </li>-->
 <!--            -->

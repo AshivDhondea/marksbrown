@@ -3,30 +3,8 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    
-    <script type= "text/javascript">
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = 'https:' == document.location.protocol ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js' : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'; 
-        s[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" + 
-            "    config: ['MMLorHTML.js']," + 
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS','output/NativeMML']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," + 
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax .mo, .MathJax .mi': {color: 'black ! important'}} " +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(s);
-    </script>
 
-
-    <title>University College London Beamer&nbsp;Template</title>
+    <title>University College London Beamer Template</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -35,7 +13,7 @@
     <!-- Open Graph tags -->
 
             <meta property="og:type" content="article"/>
-            <meta property="og:title" content="University College London Beamer&nbsp;Template"/>
+            <meta property="og:title" content="University College London Beamer Template"/>
             <meta property="og:url" content="http://markbrown.io/university-college-london-beamer-template.html"/>
             <meta property="og:description" content="In this post I’ll briefly go over my UCL template for Beamer presentations. Why LaTeX? Neat Equation formatting Excellent typesetting pdf files work anywhere Why Beamer? Images and equations very quickly turned into a presentation Font sizes are always sensible Why XeTeX? Free choice of any font installed So ..."/>
 
@@ -85,7 +63,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li><a href="http://markbrown.io/about/">About</a></li>
-                        <li><a href="http://markbrown.io/cv/">Curriculum&nbsp;Vitae</a></li>
+                        <li><a href="http://markbrown.io/cv/">Curriculum Vitae</a></li>
                         <li><a href="http://markbrown.io/research/">Research</a></li>
                         <li><a href="http://markbrown.io/tutoring/">Tutoring</a></li>
             </ul>
@@ -106,8 +84,8 @@
                 <h1>
                     <a href="http://markbrown.io/university-college-london-beamer-template.html"
                        rel="bookmark"
-                       title="Permalink to University College London Beamer&nbsp;Template">
-                        University College London Beamer&nbsp;Template
+                       title="Permalink to University College London Beamer Template">
+                        University College London Beamer Template
                     </a>
                 </h1>
             </header>
@@ -145,10 +123,10 @@
 <div class="highlight"><pre>sudo apt-get install texlive-full
 </pre></div>
 <p>Alternatively head to <a class="reference external" href="http://www.tug.org/texlive/">texlive</a> and follow the appropriate instructions for your system. The template given here builds upon the lovely code from <a class="reference external" href="http://www.ucl.ac.uk/~ucbpeal/latexposter.html">Ed Long</a>. The main difference when it comes to using XeTeX with beamer is we&nbsp;add</p>
-<div class="highlight"><pre><span class="k">\setallmainfonts</span>(Digits,Latin)<span class="nb">{</span>&lt;<span class="caps">FONTNAME</span>&gt;<span class="nb">}</span>
+<div class="highlight"><pre><span class="k">\setallmainfonts</span>(Digits,Latin)<span class="nb">{</span>&lt;FONTNAME&gt;<span class="nb">}</span>
 </pre></div>
 <p>to update the main font to our choice. In this case we&#8217;re not changing the font mathematics will appear in, purely because most fonts won&#8217;t render very nicely. Throughout the template we set the colour of the <span class="caps">UCL</span> header and the text colour the same. The first step in setting that colour&nbsp;is</p>
-<div class="highlight"><pre><span class="k">\definecolor</span><span class="nb">{</span>maincolour<span class="nb">}{</span>rgb<span class="nb">}{</span>&lt;<span class="caps">COLOUR</span>&gt;<span class="nb">}</span>
+<div class="highlight"><pre><span class="k">\definecolor</span><span class="nb">{</span>maincolour<span class="nb">}{</span>rgb<span class="nb">}{</span>&lt;COLOUR&gt;<span class="nb">}</span>
 </pre></div>
 <p>Compiling our presentation file uses the following&nbsp;command</p>
 <div class="highlight"><pre>xelatex &lt;PRESENTATION&gt;.tex
@@ -157,7 +135,7 @@
 <a class="reference external" href="https://github.com/marksbrown/xetextemplate">https://github.com/marksbrown/xetextemplate</a></p>
 <div class="section" id="designing-our-slides">
 <h2>Designing our&nbsp;slides</h2>
-<p>This is pretty much choosing a colour and font we like. Preferably both being clear and clean to read. For this example we&#8217;ll choose &#8220;Norasi&#8221; as the font and a lovely olive green. The first thing to be done is updating the colour of the <span class="caps">UCL</span> header. With the files in images/svg lies &#8216;uclheader.svg&#8217;. I&#8217;d recommend opening this up in Inkscape and changing the colour of both elements to your colour of choice using the &#8216;fill and stroke&#8217;. Following this, save a pdf copy to the images/pdf and voila! Step one&nbsp;done.</p>
+<p>This is pretty much choosing a colour and font we like. Preferably both being clear and clean to read. For this example we&#8217;ll choose &quot;Norasi&quot; as the font and a lovely olive green. The first thing to be done is updating the colour of the <span class="caps">UCL</span> header. With the files in images/svg lies &#8216;uclheader.svg&#8217;. I&#8217;d recommend opening this up in Inkscape and changing the colour of both elements to your colour of choice using the &#8216;fill and stroke&#8217;. Following this, save a pdf copy to the images/pdf and voila! Step one&nbsp;done.</p>
 <p>Next we need to make a note of the colour we&#8217;ve just&nbsp;selected.</p>
 <img alt="inkscape fill and stroke with a colour green" src="/images/acolourgreen.png" style="width: 40%;" />
 <p>For LaTeX we divide the <span class="caps">RGB</span> by 255 to give our colour&nbsp;as</p>
@@ -175,8 +153,8 @@
     </section>
 
         </div>
-        <div class="col-lg-3 well well-sm" id="sidebar">
-<aside>
+        <div class="col-lg-3 well well-sm hidden-print" id="sidebar">
+<aside class='hidden-print'>
     <section>
 
             <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Contact Me</h4></li>
@@ -209,8 +187,8 @@
 <!--            <li class="list-group-item"><a href="http://markbrown.io/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/specular.html">-->
-<!--                        specular-->
+<!--                    <a href="http://markbrown.io/tag/crlb.html">-->
+<!--                        crlb-->
 <!--                    </a>-->
 <!--                </li>-->
 <!--            -->
@@ -227,8 +205,8 @@
 <!--                </li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/crlb.html">-->
-<!--                        crlb-->
+<!--                    <a href="http://markbrown.io/tag/specular.html">-->
+<!--                        specular-->
 <!--                    </a>-->
 <!--                </li>-->
 <!--            -->

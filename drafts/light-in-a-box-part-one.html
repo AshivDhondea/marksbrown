@@ -3,30 +3,8 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    
-    <script type= "text/javascript">
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = 'https:' == document.location.protocol ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js' : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'; 
-        s[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" + 
-            "    config: ['MMLorHTML.js']," + 
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS','output/NativeMML']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," + 
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax .mo, .MathJax .mi': {color: 'black ! important'}} " +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(s);
-    </script>
 
-
-    <title>Light in a Box (Part&nbsp;One)</title>
+    <title>Light in a Box (Part One)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -35,8 +13,8 @@
     <!-- Open Graph tags -->
 
             <meta property="og:type" content="article"/>
-            <meta property="og:title" content="Light in a Box (Part&nbsp;One)"/>
-            <meta property="og:url" content="http://markbrown.io/light-in-a-box-part-one.html"/>
+            <meta property="og:title" content="Light in a Box (Part One)"/>
+            <meta property="og:url" content="http://markbrown.io/drafts/light-in-a-box-part-one.html"/>
             <meta property="og:description" content="Over the next five posts I’m going to explore some of the mathematics, the physics and ultimately the (Python) coding of simulating the spread of light within a box. As we progress through I’ll attempt to explain anything particularly irksome. In this first post we’ll look at ..."/>
 
     <!-- Bootstrap -->
@@ -85,7 +63,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li><a href="http://markbrown.io/about/">About</a></li>
-                        <li><a href="http://markbrown.io/cv/">Curriculum&nbsp;Vitae</a></li>
+                        <li><a href="http://markbrown.io/cv/">Curriculum Vitae</a></li>
                         <li><a href="http://markbrown.io/research/">Research</a></li>
                         <li><a href="http://markbrown.io/tutoring/">Tutoring</a></li>
             </ul>
@@ -104,10 +82,10 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="http://markbrown.io/light-in-a-box-part-one.html"
+                    <a href="http://markbrown.io/drafts/light-in-a-box-part-one.html"
                        rel="bookmark"
-                       title="Permalink to Light in a Box (Part&nbsp;One)">
-                        Light in a Box (Part&nbsp;One)
+                       title="Permalink to Light in a Box (Part One)">
+                        Light in a Box (Part One)
                     </a>
                 </h1>
             </header>
@@ -117,7 +95,7 @@
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="icon-calendar"></i>Tue 12 March 2013
+        <i class="icon-calendar"></i>Tue 03 December 2013
     </span>
 
 
@@ -147,12 +125,12 @@
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">lightbox</span> <span class="kn">as</span> <span class="nn">lb</span>
 </pre></div>
 <p>The Ipython Notebooks relating to each post as well as the module itself can be found at&nbsp;:</p>
-<p>&lt;<span class="caps">GITHUB</span>&nbsp;<span class="caps">URL</span>&gt;</p>
+<p>&lt;<span class="caps">GITHUB</span> <span class="caps">URL</span>&gt;</p>
 </div>
 <div class="section" id="the-light">
 <h2>The&nbsp;Light</h2>
-<p>To begin with we will consider our light source as $N$ individual photons. Each photon, a discrete packet of light, will have an energy and a direction. Our first task is to ensure all these photons spread out equally in all directions. This property, which I&#8217;ll call isotropy, just means that we have equal intensity regardless of which way we look at the&nbsp;source.</p>
-<p>We&#8217;ll treat each photon direction as a <a class="reference external" href="http://en.wikipedia.org/wiki/Unit_vector">unit vector</a>. Because of this each direction has an magnitude of one. Handily this means any point on a sphere with a radius of 1, a unit sphere, defines all our possible directions. To generate $N$ photons with equally spaced directions becomes a matter of selecting points on the sphere that are equally spaced out. Conveniently methods for doing this are <a class="reference external" href="http://mathworld.wolfram.com/SpherePointPicking.html">numerous</a>.</p>
+<p>To begin with we will consider our light source as <mathjax>$N$</mathjax> individual photons. Each photon, a discrete packet of light, will have an energy and a direction. Our first task is to ensure all these photons spread out equally in all directions. This property, which I&#8217;ll call isotropy, just means that we have equal intensity regardless of which way we look at the&nbsp;source.</p>
+<p>We&#8217;ll treat each photon direction as a <a class="reference external" href="http://en.wikipedia.org/wiki/Unit_vector">unit vector</a>. Because of this each direction has an magnitude of one. Handily this means any point on a sphere with a radius of 1, a unit sphere, defines all our possible directions. To generate <mathjax>$N$</mathjax> photons with equally spaced directions becomes a matter of selecting points on the sphere that are equally spaced out. Conveniently methods for doing this are <a class="reference external" href="http://mathworld.wolfram.com/SpherePointPicking.html">numerous</a>.</p>
 <p>In our case we&#8217;ll chose the <em>Marsaglia (1972)</em> method. We can implement this like&nbsp;so</p>
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">RandomPointsOnASphere</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="n">hemisphere</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
@@ -210,19 +188,19 @@
 <div class="section" id="the-box">
 <h2>The&nbsp;Box</h2>
 <div class="highlight"><pre><span class="c">##Regular Box</span>
-<span class="n"><span class="caps">LX</span></span> <span class="o">=</span> <span class="mf">2.</span>
-<span class="n"><span class="caps">LY</span></span> <span class="o">=</span> <span class="mf">2.</span>
-<span class="n"><span class="caps">LZ</span></span> <span class="o">=</span> <span class="mf">20.</span>
+<span class="n">LX</span> <span class="o">=</span> <span class="mf">2.</span>
+<span class="n">LY</span> <span class="o">=</span> <span class="mf">2.</span>
+<span class="n">LZ</span> <span class="o">=</span> <span class="mf">20.</span>
 
-<span class="n">OffSet</span> <span class="o">=</span> <span class="p">(</span><span class="n"><span class="caps">LX</span></span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n"><span class="caps">LY</span></span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n"><span class="caps">LZ</span></span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">OffSet</span> <span class="o">=</span> <span class="p">(</span><span class="n">LX</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">LY</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">LZ</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
 
-<span class="n">Corners</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="n"><span class="caps">LX</span></span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="n"><span class="caps">LY</span></span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="n"><span class="caps">LX</span></span><span class="p">,</span><span class="n"><span class="caps">LY</span></span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n"><span class="caps">LZ</span></span><span class="p">],[</span><span class="n"><span class="caps">LX</span></span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n"><span class="caps">LZ</span></span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="n"><span class="caps">LY</span></span><span class="p">,</span><span class="n"><span class="caps">LZ</span></span><span class="p">],[</span><span class="n"><span class="caps">LX</span></span><span class="p">,</span><span class="n"><span class="caps">LY</span></span><span class="p">,</span><span class="n"><span class="caps">LZ</span></span><span class="p">]]</span>
+<span class="n">Corners</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="n">LX</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="n">LY</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="n">LX</span><span class="p">,</span><span class="n">LY</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">LZ</span><span class="p">],[</span><span class="n">LX</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">LZ</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="n">LY</span><span class="p">,</span><span class="n">LZ</span><span class="p">],[</span><span class="n">LX</span><span class="p">,</span><span class="n">LY</span><span class="p">,</span><span class="n">LZ</span><span class="p">]]</span>
 <span class="n">SurfaceNormals</span> <span class="o">=</span> <span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
 </pre></div>
 <p>Using this information we can first look at drawing the 3D box we&#8217;ve just described. But to begin with how do we draw all the correct&nbsp;edges?</p>
 <p>First off we need to find the four corners of each face. We can do this because any two corners on the same face will define a vector that is perpendicular to the surface normal. Mathematically we can write
-$$(\vec{c_i}-\vec{c_j}).\vec{s_k} = 0$$
-where $c_i$ and $c_j$ are two corners (where $i\neq j$) and $s$ are the surface vectors. As we need to find four corners that meet this criteria we all four corners to match the above criteria. Essentially we need to look at every combination of 4 corners out of 8 and compare them to each of the 8 surface normals. If all four corners match a single surface normal, we&#8217;ve found a&nbsp;face!</p>
+<mathjax>$$(\vec{c_i}-\vec{c_j}).\vec{s_k} = 0$$</mathjax>
+where <mathjax>$c_i$</mathjax> and <mathjax>$c_j$</mathjax> are two corners (where <mathjax>$i\neq j$</mathjax>) and <mathjax>$s$</mathjax> are the surface vectors. As we need to find four corners that meet this criteria we all four corners to match the above criteria. Essentially we need to look at every combination of 4 corners out of 8 and compare them to each of the 8 surface normals. If all four corners match a single surface normal, we&#8217;ve found a&nbsp;face!</p>
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">PlotFrame</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">axis</span><span class="p">,</span><span class="n">threshold</span><span class="o">=</span><span class="mf">1e-15</span><span class="p">,</span><span class="n">offset</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    plots a 3D wireframe of the box defined by the vertices and surface normals given</span>
@@ -277,26 +255,26 @@ where $c_i$ and $c_j$ are two corners (where $i\neq j$) and $s$ are the surface 
 <span class="n">L</span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="n">mm</span>
 <span class="n">TwoFaces</span> <span class="o">=</span> <span class="n">lb</span><span class="o">.</span><span class="n">TwoFacesBox</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="n">rindex</span><span class="o">=</span><span class="mf">1.8</span><span class="p">)</span>
 
-<span class="c">#Regular Cuboid (<span class="caps">LX</span>,<span class="caps">LY</span>,<span class="caps">LZ</span>)</span>
-<span class="n"><span class="caps">LX</span></span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
-<span class="n"><span class="caps">LY</span></span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
-<span class="n"><span class="caps">LZ</span></span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="n">mm</span>
-<span class="n">RegularCuboid</span> <span class="o">=</span> <span class="n">lb</span><span class="o">.</span><span class="n">RegularCuboidBox</span><span class="p">(</span><span class="n"><span class="caps">LX</span></span><span class="p">,</span><span class="n"><span class="caps">LY</span></span><span class="p">,</span><span class="n"><span class="caps">LZ</span></span><span class="p">,</span><span class="n">rindex</span><span class="o">=</span><span class="mf">1.8</span><span class="p">)</span>
+<span class="c">#Regular Cuboid (LX,LY,LZ)</span>
+<span class="n">LX</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
+<span class="n">LY</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
+<span class="n">LZ</span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="n">mm</span>
+<span class="n">RegularCuboid</span> <span class="o">=</span> <span class="n">lb</span><span class="o">.</span><span class="n">RegularCuboidBox</span><span class="p">(</span><span class="n">LX</span><span class="p">,</span><span class="n">LY</span><span class="p">,</span><span class="n">LZ</span><span class="p">,</span><span class="n">rindex</span><span class="o">=</span><span class="mf">1.8</span><span class="p">)</span>
 
-<span class="c">#Raised Top (ThetaX,<span class="caps">LX</span>,<span class="caps">LX</span>,<span class="caps">LZ</span>)</span>
-<span class="n"><span class="caps">LX</span></span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
-<span class="n"><span class="caps">LY</span></span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
-<span class="n"><span class="caps">LZ</span></span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="n">mm</span>
+<span class="c">#Raised Top (ThetaX,LX,LX,LZ)</span>
+<span class="n">LX</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
+<span class="n">LY</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
+<span class="n">LZ</span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="n">mm</span>
 <span class="n">ThetaX</span> <span class="o">=</span> <span class="mi">85</span><span class="o">*</span><span class="n">Degrees</span>
-<span class="n">RaisedTop</span> <span class="o">=</span> <span class="n">lb</span><span class="o">.</span><span class="n">RaisedTopBox</span><span class="p">(</span><span class="n"><span class="caps">LX</span></span><span class="p">,</span><span class="n"><span class="caps">LY</span></span><span class="p">,</span><span class="n"><span class="caps">LZ</span></span><span class="p">,</span><span class="n">ThetaX</span><span class="p">,</span><span class="n">rindex</span><span class="o">=</span><span class="mf">1.8</span><span class="p">)</span>
+<span class="n">RaisedTop</span> <span class="o">=</span> <span class="n">lb</span><span class="o">.</span><span class="n">RaisedTopBox</span><span class="p">(</span><span class="n">LX</span><span class="p">,</span><span class="n">LY</span><span class="p">,</span><span class="n">LZ</span><span class="p">,</span><span class="n">ThetaX</span><span class="p">,</span><span class="n">rindex</span><span class="o">=</span><span class="mf">1.8</span><span class="p">)</span>
 
-<span class="c">#Trapezium (ThetaX,ThetaY,<span class="caps">LX</span>,<span class="caps">LY</span>,<span class="caps">LZ</span>)</span>
-<span class="n"><span class="caps">LX</span></span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
-<span class="n"><span class="caps">LY</span></span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
-<span class="n"><span class="caps">LZ</span></span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="n">mm</span>
+<span class="c">#Trapezium (ThetaX,ThetaY,LX,LY,LZ)</span>
+<span class="n">LX</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
+<span class="n">LY</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">mm</span>
+<span class="n">LZ</span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="n">mm</span>
 <span class="n">ThetaX</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">Degrees</span>
 <span class="n">ThetaY</span> <span class="o">=</span> <span class="mi">8</span><span class="o">*</span><span class="n">Degrees</span>
-<span class="n">Trapezium</span> <span class="o">=</span> <span class="n">lb</span><span class="o">.</span><span class="n">TrapeziumBox</span><span class="p">(</span><span class="n"><span class="caps">LX</span></span><span class="p">,</span><span class="n"><span class="caps">LY</span></span><span class="p">,</span><span class="n"><span class="caps">LZ</span></span><span class="p">,</span><span class="n">ThetaX</span><span class="p">,</span><span class="n">ThetaY</span><span class="p">,</span><span class="n">rindex</span><span class="o">=</span><span class="mf">1.8</span><span class="p">)</span>
+<span class="n">Trapezium</span> <span class="o">=</span> <span class="n">lb</span><span class="o">.</span><span class="n">TrapeziumBox</span><span class="p">(</span><span class="n">LX</span><span class="p">,</span><span class="n">LY</span><span class="p">,</span><span class="n">LZ</span><span class="p">,</span><span class="n">ThetaX</span><span class="p">,</span><span class="n">ThetaY</span><span class="p">,</span><span class="n">rindex</span><span class="o">=</span><span class="mf">1.8</span><span class="p">)</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
 <span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">221</span><span class="p">,</span><span class="n">projection</span><span class="o">=</span><span class="s">&#39;3d&#39;</span><span class="p">)</span>
@@ -319,6 +297,36 @@ where $c_i$ and $c_j$ are two corners (where $i\neq j$) and $s$ are the surface 
 <h2>Summary</h2>
 <p>We&#8217;ve defined our initial directions and drawn our box. Next time we&#8217;ll actually look at the trickier question of getting things to&nbsp;move!</p>
 </div>
+<script type= "text/javascript">
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+</script>
 
             </div>
             <!-- /.entry-content -->
@@ -327,8 +335,8 @@ where $c_i$ and $c_j$ are two corners (where $i\neq j$) and $s$ are the surface 
     </section>
 
         </div>
-        <div class="col-lg-3 well well-sm" id="sidebar">
-<aside>
+        <div class="col-lg-3 well well-sm hidden-print" id="sidebar">
+<aside class='hidden-print'>
     <section>
 
             <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Contact Me</h4></li>
@@ -361,8 +369,8 @@ where $c_i$ and $c_j$ are two corners (where $i\neq j$) and $s$ are the surface 
 <!--            <li class="list-group-item"><a href="http://markbrown.io/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/specular.html">-->
-<!--                        specular-->
+<!--                    <a href="http://markbrown.io/tag/crlb.html">-->
+<!--                        crlb-->
 <!--                    </a>-->
 <!--                </li>-->
 <!--            -->
@@ -379,8 +387,8 @@ where $c_i$ and $c_j$ are two corners (where $i\neq j$) and $s$ are the surface 
 <!--                </li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/crlb.html">-->
-<!--                        crlb-->
+<!--                    <a href="http://markbrown.io/tag/specular.html">-->
+<!--                        specular-->
 <!--                    </a>-->
 <!--                </li>-->
 <!--            -->

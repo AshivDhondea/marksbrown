@@ -3,30 +3,8 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    
-    <script type= "text/javascript">
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = 'https:' == document.location.protocol ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js' : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'; 
-        s[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" + 
-            "    config: ['MMLorHTML.js']," + 
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS','output/NativeMML']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," + 
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax .mo, .MathJax .mi': {color: 'black ! important'}} " +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(s);
-    </script>
 
-
-    <title>Light&nbsp;Transport</title>
+    <title>Light Transport</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -35,9 +13,9 @@
     <!-- Open Graph tags -->
 
             <meta property="og:type" content="article"/>
-            <meta property="og:title" content="Light&nbsp;Transport"/>
+            <meta property="og:title" content="Light Transport"/>
             <meta property="og:url" content="http://markbrown.io/ccc/lightransport.html"/>
-            <meta property="og:description" content="Analytical Light Transport On this page we will give the derivation for the specular PDF, $p(t)$. The analytical expression is shown above as a sum of two modes; Namely the forward and backward, corresponding to light transport within a regular cuboid scintillator crystal of dimensions $2\times2\times20$mm ..."/>
+            <meta property="og:description" content="Analytical Light Transport On this page we will give the derivation for the specular PDF, $p(t)$. The analytical expression is shown above as a sum of two modes; Namely the forward and backward, corresponding to light transport within a regular cuboid scintillator crystal of dimensions $2\times2\times20$mm ... if (!document.getElementById(&#39;mathjaxscript_pelican_#%@#$@#&#39;)) { var mathjaxscript = document.createElement(&#39;script&#39;); mathjaxscript.id = &#39;mathjaxscript_pelican_#%@#$@#&#39;; mathjaxscript.type = &#39;text/javascript&#39;; mathjaxscript.src = &#39;https:&#39; == document.location.protocol ? &#39;https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#39; : &#39;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#39;; mathjaxscript[(window.opera ? &#34;innerHTML&#34; : &#34;text&#34;)] = &#34;MathJax.Hub.Config({&#34; + &#34; config: [&#39;MMLorHTML.js&#39;],&#34; + &#34; TeX: { extensions: [&#39;AMSmath.js&#39;,&#39;AMSsymbols.js&#39;,&#39;noErrors.js&#39;,&#39;noUndefined.js&#39;], equationNumbers: { autoNumber: &#39;AMS&#39; } },&#34; + &#34; jax: [&#39;input/TeX&#39;,&#39;input/MathML&#39;,&#39;output/HTML-CSS&#39;],&#34; + &#34; extensions: [&#39;tex2jax.js&#39;,&#39;mml2jax.js&#39;,&#39;MathMenu.js&#39;,&#39;MathZoom.js&#39;],&#34; + &#34; displayAlign: &#39;center&#39;,&#34; + &#34; displayIndent: &#39;0em&#39;,&#34; + &#34; showMathMenu: true,&#34; + &#34; tex2jax: { &#34; + &#34; inlineMath: [ [&#39;$&#39;,&#39;$&#39;] ], &#34; + &#34; displayMath: [ [&#39;$$&#39;,&#39;$$&#39;] ],&#34; + &#34; processEscapes: true,&#34; + &#34; preview: &#39;TeX&#39;,&#34; + &#34; }, &#34; + &#34; &#39;HTML-CSS&#39;: { &#34; + &#34; styles: { &#39;.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn&#39;: {color: &#39;black ! important&#39;} }&#34; + &#34; } &#34; + &#34;}); &#34;; (document.body || document.getElementsByTagName(&#39;head&#39;)[0]).appendChild(mathjaxscript); }"/>
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="http://markbrown.io/theme/css/bootstrap.simplex.min.css" type="text/css"/>
@@ -85,7 +63,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li><a href="http://markbrown.io/about/">About</a></li>
-                        <li><a href="http://markbrown.io/cv/">Curriculum&nbsp;Vitae</a></li>
+                        <li><a href="http://markbrown.io/cv/">Curriculum Vitae</a></li>
                         <li><a href="http://markbrown.io/research/">Research</a></li>
                         <li><a href="http://markbrown.io/tutoring/">Tutoring</a></li>
             </ul>
@@ -106,8 +84,8 @@
                 <h1>
                     <a href="http://markbrown.io/ccc/lightransport.html"
                        rel="bookmark"
-                       title="Permalink to Light&nbsp;Transport">
-                        Light&nbsp;Transport
+                       title="Permalink to Light Transport">
+                        Light Transport
                     </a>
                 </h1>
             </header>
@@ -132,51 +110,86 @@
                 <div class="section" id="analytical-light-transport">
 <h2>Analytical Light&nbsp;Transport</h2>
 <img alt="Specular PDF from Analytical Expression" class="align-center" src="../images/SpecularPDFAnalytical.png" style="width: 100%;" />
-<p>On this page we will give the derivation for the specular <span class="caps">PDF</span>, $p(t)$. The analytical expression is shown above as a sum of two modes; Namely the forward and backward, corresponding to light transport within a regular cuboid scintillator crystal of dimensions $2\times2\times20$mm$^3$, with a depth of interaction (<span class="caps">DOI</span>) of&nbsp;10mm.</p>
+<p>On this page we will give the derivation for the specular <span class="caps">PDF</span>, <mathjax>$p(t)$</mathjax>. The analytical expression is shown above as a sum of two modes; Namely the forward and backward, corresponding to light transport within a regular cuboid scintillator crystal of dimensions <mathjax>$2\times2\times20$</mathjax>mm<mathjax>$^3$</mathjax>, with a depth of interaction (<span class="caps">DOI</span>) of&nbsp;10mm.</p>
 <img alt="Specular PDF from Monte Carlo" class="align-center" src="../images/SpecularPDFMonteCarlo.png" style="width: 100%;" />
 <p>The above image is the specular <span class="caps">PDF</span> taken from Monte-Carlo ray tracing of a regular&nbsp;cuboid.</p>
 </div>
 <div class="section" id="the-derivation">
 <h2>The&nbsp;Derivation</h2>
-<p>We begin by looking at an isotropic source placed between two infinite faces. The source is a distance, <span class="caps">DOI</span>, from one face, which we shall refer to as the top face. The opposing face shall be referred to as the bottom face. The two faces are separated by a distance $L$. Between the two faces the refractive index is $n_s$. Using the time-averaged Poynting vector incident per unit solid angle, , the power ($P$) per unit solid angle, can be defined as
-\begin{align}
+<p>We begin by looking at an isotropic source placed between two infinite faces. The source is a distance, <span class="caps">DOI</span>, from one face, which we shall refer to as the top face. The opposing face shall be referred to as the bottom face. The two faces are separated by a distance <mathjax>$L$</mathjax>. Between the two faces the refractive index is <mathjax>$n_s$</mathjax>. Using the time-averaged Poynting vector incident per unit solid angle, , the power (<mathjax>$P$</mathjax>) per unit solid angle, can be defined as
+<mathjax>\begin{align}
 \frac{dP}{d\Omega} = \frac{r^2}{2}\vec{n}.\vec{E}\times\vec{H^*}
-\end{align}
-where $\vec{n}$ is the direction of interest, $\vec{E}$ is the electric field, $\vec{H}^*$ is the complex conjugate of the magnetic field and $\Omega$ is the solid angle subtended. For a spherical wave we therefore find
-\begin{align}
-\begin{pmatrix}\vec{E} &#92;&#92; \vec{H}\end{pmatrix} &amp;= A_0\begin{pmatrix}\hat{\theta} &#92;&#92; \hat{\phi}\end{pmatrix}\frac{1}{r}e^{i\vec{k}.\vec{r}}e^{-i\omega t}&#92;&#92;
-\therefore \frac{dP}{d\Omega} &amp;= \frac{A_0^2}{2}\vec{n}.\vec{r}&nbsp;\end{align}</p>
-<p>By letting $\vec{n}=\vec{r}$, we find the power per unit solid angle is constant regardless of direction. This is as expected for an isotropic source. Integrating over the solid angle with ranges $\{\theta,\theta_1,\theta_2\}$ and $\{\phi,0,2\pi\}$ it can be shown&nbsp;that</p>
-<p>\begin{align}
-P(\theta_1,\theta_2) &amp;= \int \frac{dP}{d\Omega} d\Omega = \frac{A_0^2}{2}\int\limits_{\phi=0}^{2\pi}\int\limits_{\theta=\theta_1}^{\theta_2}\sin\theta d\theta d\phi &#92;&#92;
-&amp;=\pi A_0^2(\cos\theta_1-\cos\theta_2)&nbsp;\end{align}</p>
-<p>Consider $\theta_1$ is zero with $\theta_2=\theta$ we arrive at
-\begin{align}
-P(\theta) &amp;= \pi A_0^2(1-\cos\theta)&#92;&#92;
+\end{align}</mathjax>
+where <mathjax>$\vec{n}$</mathjax> is the direction of interest, <mathjax>$\vec{E}$</mathjax> is the electric field, <mathjax>$\vec{H}^*$</mathjax> is the complex conjugate of the magnetic field and <mathjax>$\Omega$</mathjax> is the solid angle subtended. For a spherical wave we therefore find
+<mathjax>\begin{align}
+\begin{pmatrix}\vec{E} \\\\ \vec{H}\end{pmatrix} &amp;= A_0\begin{pmatrix}\hat{\theta} \\\\ \hat{\phi}\end{pmatrix}\frac{1}{r}e^{i\vec{k}.\vec{r}}e^{-i\omega t}\\\\
+\therefore \frac{dP}{d\Omega} &amp;= \frac{A_0^2}{2}\vec{n}.\vec{r}
+\end{align}</mathjax></p>
+<p>By letting <mathjax>$\vec{n}=\vec{r}$</mathjax>, we find the power per unit solid angle is constant regardless of direction. This is as expected for an isotropic source. Integrating over the solid angle with ranges <mathjax>$\{\theta,\theta_1,\theta_2\}$</mathjax> and <mathjax>$\{\phi,0,2\pi\}$</mathjax> it can be shown&nbsp;that</p>
+<p><mathjax>\begin{align}
+P(\theta_1,\theta_2) &amp;= \int \frac{dP}{d\Omega} d\Omega = \frac{A_0^2}{2}\int\limits_{\phi=0}^{2\pi}\int\limits_{\theta=\theta_1}^{\theta_2}\sin\theta d\theta d\phi \\\\
+&amp;=\pi A_0^2(\cos\theta_1-\cos\theta_2)
+\end{align}</mathjax></p>
+<p>Consider <mathjax>$\theta_1$</mathjax> is zero with <mathjax>$\theta_2=\theta$</mathjax> we arrive at
+<mathjax>\begin{align}
+P(\theta) &amp;= \pi A_0^2(1-\cos\theta)\\\\
 F(\theta) = \frac{P}{P_0} &amp;= \frac{1}{2}(1-\cos\theta)
-\end{align}
-where $P_0$ is total power emitted into the full $4\pi$ sphere which can be seen to be $2\pi A_0^2$. To find the power per unit angle consider $\theta_1=\theta$ and $\theta_2=\theta+d\theta$, such that
-\begin{align}
-dP &amp;= \frac{P_0}{2}(\cos\theta - \cos(\theta+d\theta))&#92;&#92;
-\therefore \frac{1}{P_0}\frac{dP}{d\theta}&amp;=\frac{1}{2}\sin\theta&nbsp;\end{align}</p>
-<p>For an isotropic source a distance $z$ from the boundary we see
-\begin{align}
+\end{align}</mathjax>
+where <mathjax>$P_0$</mathjax> is total power emitted into the full <mathjax>$4\pi$</mathjax> sphere which can be seen to be <mathjax>$2\pi A_0^2$</mathjax>. To find the power per unit angle consider <mathjax>$\theta_1=\theta$</mathjax> and <mathjax>$\theta_2=\theta+d\theta$</mathjax>, such that
+<mathjax>\begin{align}
+dP &amp;= \frac{P_0}{2}(\cos\theta - \cos(\theta+d\theta))\\\\
+\therefore \frac{1}{P_0}\frac{dP}{d\theta}&amp;=\frac{1}{2}\sin\theta
+\end{align}</mathjax></p>
+<p>For an isotropic source a distance <mathjax>$z$</mathjax> from the boundary we see
+<mathjax>\begin{align}
 t(\theta) = \frac{n\text{z}}{c}\frac{1}{\cos\theta} = \frac{t_0}{\cos\theta}
-\end{align}
-\begin{align}
+\end{align}</mathjax>
+<mathjax>\begin{align}
 \frac{d\theta}{dt}=\frac{1}{t_0}\frac{\cos^2\theta}{\sin\theta}
-\end{align}
-where $c$ is the speed of light and $t_0$ is the minimum time to the top face. Combining this with the power per unit theta, results in the rate of change of power with time giving,
-\begin{align}
+\end{align}</mathjax>
+where <mathjax>$c$</mathjax> is the speed of light and <mathjax>$t_0$</mathjax> is the minimum time to the top face. Combining this with the power per unit theta, results in the rate of change of power with time giving,
+<mathjax>\begin{align}
 \frac{dP}{dt} = \frac{t_0P_0}{2}\frac{1}{t^2}
-\end{align}
-Given a maximum allowed travel time, $t_1$, due to the critical angle of the boundary, a <span class="caps">PDF</span> defining the light transport, $p(t)$, can be found&nbsp;by</p>
-<p>\begin{align}
-p(t)= A\frac{t_0P_0}{2}\int\limits_{t=t_0}^{t_1}\frac{1}{t^2}dt = 1&nbsp;\end{align}</p>
-<p>where $t_1=\frac{t_0}{\cos\theta_c}$ the <span class="caps">PDF</span> defining light transport for the perfectly specular case is given&nbsp;by</p>
-<p>\begin{equation}
-p(t|t_0,\theta_c) = \frac{t_0}{1-\cos\theta_c}\frac{1}{t^2}&nbsp;\end{equation}</p>
+\end{align}</mathjax>
+Given a maximum allowed travel time, <mathjax>$t_1$</mathjax>, due to the critical angle of the boundary, a <span class="caps">PDF</span> defining the light transport, <mathjax>$p(t)$</mathjax>, can be found&nbsp;by</p>
+<p><mathjax>\begin{align}
+p(t)= A\frac{t_0P_0}{2}\int\limits_{t=t_0}^{t_1}\frac{1}{t^2}dt = 1
+\end{align}</mathjax></p>
+<p>where <mathjax>$t_1=\frac{t_0}{\cos\theta_c}$</mathjax> the <span class="caps">PDF</span> defining light transport for the perfectly specular case is given&nbsp;by</p>
+<p><mathjax>\begin{equation}
+p(t|t_0,\theta_c) = \frac{t_0}{1-\cos\theta_c}\frac{1}{t^2}
+\end{equation}</mathjax></p>
 </div>
+<script type= "text/javascript">
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+</script>
 
             </div>
             <!-- /.entry-content -->
@@ -185,8 +198,8 @@ p(t|t_0,\theta_c) = \frac{t_0}{1-\cos\theta_c}\frac{1}{t^2}&nbsp;\end{equation}<
     </section>
 
         </div>
-        <div class="col-lg-3 well well-sm" id="sidebar">
-<aside>
+        <div class="col-lg-3 well well-sm hidden-print" id="sidebar">
+<aside class='hidden-print'>
     <section>
 
             <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Contact Me</h4></li>
@@ -219,8 +232,8 @@ p(t|t_0,\theta_c) = \frac{t_0}{1-\cos\theta_c}\frac{1}{t^2}&nbsp;\end{equation}<
 <!--            <li class="list-group-item"><a href="http://markbrown.io/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/specular.html">-->
-<!--                        specular-->
+<!--                    <a href="http://markbrown.io/tag/crlb.html">-->
+<!--                        crlb-->
 <!--                    </a>-->
 <!--                </li>-->
 <!--            -->
@@ -237,8 +250,8 @@ p(t|t_0,\theta_c) = \frac{t_0}{1-\cos\theta_c}\frac{1}{t^2}&nbsp;\end{equation}<
 <!--                </li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/crlb.html">-->
-<!--                        crlb-->
+<!--                    <a href="http://markbrown.io/tag/specular.html">-->
+<!--                        specular-->
 <!--                    </a>-->
 <!--                </li>-->
 <!--            -->

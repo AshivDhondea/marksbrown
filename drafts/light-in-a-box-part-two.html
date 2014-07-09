@@ -3,30 +3,8 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    
-    <script type= "text/javascript">
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = 'https:' == document.location.protocol ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js' : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'; 
-        s[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" + 
-            "    config: ['MMLorHTML.js']," + 
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS','output/NativeMML']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," + 
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax .mo, .MathJax .mi': {color: 'black ! important'}} " +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(s);
-    </script>
 
-
-    <title>Light in a Box (Part&nbsp;Two)</title>
+    <title>Light in a Box (Part Two)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -35,8 +13,8 @@
     <!-- Open Graph tags -->
 
             <meta property="og:type" content="article"/>
-            <meta property="og:title" content="Light in a Box (Part&nbsp;Two)"/>
-            <meta property="og:url" content="http://markbrown.io/light-in-a-box-part-two.html"/>
+            <meta property="og:title" content="Light in a Box (Part Two)"/>
+            <meta property="og:url" content="http://markbrown.io/drafts/light-in-a-box-part-two.html"/>
             <meta property="og:description" content="In part one we looked at the basics of generating the initial directions of the light in our simulation. In this post we’ll look at how we deal with reflections from the surfaces of the box. For the moment we’ll say the surfaces of the box are completely ..."/>
 
     <!-- Bootstrap -->
@@ -85,7 +63,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li><a href="http://markbrown.io/about/">About</a></li>
-                        <li><a href="http://markbrown.io/cv/">Curriculum&nbsp;Vitae</a></li>
+                        <li><a href="http://markbrown.io/cv/">Curriculum Vitae</a></li>
                         <li><a href="http://markbrown.io/research/">Research</a></li>
                         <li><a href="http://markbrown.io/tutoring/">Tutoring</a></li>
             </ul>
@@ -104,10 +82,10 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="http://markbrown.io/light-in-a-box-part-two.html"
+                    <a href="http://markbrown.io/drafts/light-in-a-box-part-two.html"
                        rel="bookmark"
-                       title="Permalink to Light in a Box (Part&nbsp;Two)">
-                        Light in a Box (Part&nbsp;Two)
+                       title="Permalink to Light in a Box (Part Two)">
+                        Light in a Box (Part Two)
                     </a>
                 </h1>
             </header>
@@ -147,55 +125,59 @@
 <div class="section" id="specular-reflection">
 <h2>1. Specular&nbsp;Reflection</h2>
 <img alt="Specular reflection" src="images/specular.png" style="width: 50%;" />
-<p>Behold my wonky diagram! I&#8217;ve rotated it purely to make it clear we&#8217;re trying to describe $n_f$ in terms of the initial directin, $n_i$ and the surface normal, $S$. For specular reflection we also can state that the incoming angle is equal to the outgoing angle. Using just this information we draw the above diagram. On this diagram we&#8217;ve also drawn two vectors $a$ and $b$. The first thing to notice though is that we have two closed triangles. Meaning we can&nbsp;write</p>
-<p>\begin{equation}
+<p>Behold my wonky diagram! I&#8217;ve rotated it purely to make it clear we&#8217;re trying to describe <mathjax>$n_f$</mathjax> in terms of the initial directin, <mathjax>$n_i$</mathjax> and the surface normal, <mathjax>$S$</mathjax>. For specular reflection we also can state that the incoming angle is equal to the outgoing angle. Using just this information we draw the above diagram. On this diagram we&#8217;ve also drawn two vectors <mathjax>$a$</mathjax> and <mathjax>$b$</mathjax>. The first thing to notice though is that we have two closed triangles. Meaning we can&nbsp;write</p>
+<p><mathjax>\begin{equation}
 \vec{n_i} = \vec{a} + \vec{b}
 \label{nieqn}
-\end{equation}
+\end{equation}</mathjax>
 and
-\begin{equation}
+<mathjax>\begin{equation}
 \vec{n_f} = \vec{a} - \vec{b}
-\end{equation}
-Which is nice. Let&#8217;s say we want to find $n_f$ from $n_i$ - i.e. the direction of reflection. Well from the figure we can see that
-\begin{equation}
+\end{equation}</mathjax>
+Which is nice. Let&#8217;s say we want to find <mathjax>$n_f$</mathjax> from <mathjax>$n_i$</mathjax> - i.e. the direction of reflection. Well from the figure we can see that
+<mathjax>\begin{equation}
 \vec{n_f} = 2\vec{a}-\vec{n_i}
 \label{nfeqn}
-\end{equation}
-Which again is nice, but not quite there yet. We don&#8217;t know what $a$ or $b$ even is yet. Well we can see that $b$ and $S$ are the in same direction. We also remember that the magnitude of direction vectors is 1. Just by looking (it is a right angled triangle after all), we can see that the magnitude of $b$ must be less than this. So the question is, how much of $n_i$ is in the direction of $b$? Luckily for us the answer is&nbsp;simply</p>
-<p>\begin{equation}
+\end{equation}</mathjax>
+Which again is nice, but not quite there yet. We don&#8217;t know what <mathjax>$a$</mathjax> or <mathjax>$b$</mathjax> even is yet. Well we can see that <mathjax>$b$</mathjax> and <mathjax>$S$</mathjax> are the in same direction. We also remember that the magnitude of direction vectors is 1. Just by looking (it is a right angled triangle after all), we can see that the magnitude of <mathjax>$b$</mathjax> must be less than this. So the question is, how much of <mathjax>$n_i$</mathjax> is in the direction of <mathjax>$b$</mathjax>? Luckily for us the answer is&nbsp;simply</p>
+<p><mathjax>\begin{equation}
 \vec{b} = (\vec{n_i}\cdot \vec{S})\vec{S}
-\end{equation}
-The bracketed part gives us the magnitude and $S$ gives us the direction of $b$. Now we&#8217;re making progress! We can relate $a$ to $b$ by equation $\ref{nieqn}$ such&nbsp;that</p>
-<p>\begin{equation}
+\end{equation}</mathjax>
+The bracketed part gives us the magnitude and <mathjax>$S$</mathjax> gives us the direction of <mathjax>$b$</mathjax>. Now we&#8217;re making progress! We can relate <mathjax>$a$</mathjax> to <mathjax>$b$</mathjax> by equation <mathjax>$\ref{nieqn}$</mathjax> such&nbsp;that</p>
+<p><mathjax>\begin{equation}
 \vec{a} = \vec{n_i} - (\vec{n_i}\cdot \vec{S})\vec{S}
-\end{equation}
-Combined with equation $\ref{nfeqn}$ we reach our final answer
-\begin{equation}
-\boxed{\vec{n_f} = \vec{n_i} - 2(\vec{n_i}\cdot \vec{S})\vec{S}}&nbsp;\end{equation}</p>
+\end{equation}</mathjax>
+Combined with equation <mathjax>$\ref{nfeqn}$</mathjax> we reach our final answer
+<mathjax>\begin{equation}
+\boxed{\vec{n_f} = \vec{n_i} - 2(\vec{n_i}\cdot \vec{S})\vec{S}}
+\end{equation}</mathjax></p>
 <p>So as long we know the surface vector and initial direction, we can calculate the reflection direction easily&nbsp;enough.</p>
 </div>
 <div class="section" id="backscattering-reflection">
 <h2>2. Backscattering&nbsp;Reflection</h2>
 <p>Backscattering is probably the easiest to program in, as we&#8217;re simply going back the way we came. Such that
-\begin{equation}
-\vec{n_f} = -\vec{n_i}&nbsp;\end{equation}</p>
+<mathjax>\begin{equation}
+\vec{n_f} = -\vec{n_i}
+\end{equation}</mathjax></p>
 </div>
 <div class="section" id="lobe-reflection">
 <h2>3. Lobe&nbsp;Reflection</h2>
 <img alt="lobe reflection" class="align-center" src="images/lobe-gaussian.png" style="width: 60%;" />
-<p>This is where things start getting much more amusing. In the previous cases we&#8217;ve had one photon coming in and one coming out. In this case the energy of the incoming photon will spread out in a cone about the $n_f$ direction we derived earlier. As we&#8217;re dealing with particles coming in, we&#8217;ll stick to describing particles coming out. Namely that we&#8217;ll spread the incoming energy amongst $M$ new photons, each with an energy and direction related to the kind of light spread we would like. So the question becomes what is the energy $E_i$ and direction $n_{i}$ of each new&nbsp;photon?</p>
-<p>There are two parts to this. Firstly we need to generate the directions. The amount of energy each new photon will have will be related to this also. Secondly each direction vector needs to be rotated such that it points in the &#8216;correct&#8217; manner relative to the surface normal and the original specular outgoing vector, $n_f$, we&#8217;ve derived earlier. We&#8217;ll start with this second&nbsp;part.</p>
+<p>This is where things start getting much more amusing. In the previous cases we&#8217;ve had one photon coming in and one coming out. In this case the energy of the incoming photon will spread out in a cone about the <mathjax>$n_f$</mathjax> direction we derived earlier. As we&#8217;re dealing with particles coming in, we&#8217;ll stick to describing particles coming out. Namely that we&#8217;ll spread the incoming energy amongst <mathjax>$M$</mathjax> new photons, each with an energy and direction related to the kind of light spread we would like. So the question becomes what is the energy <mathjax>$E_i$</mathjax> and direction <mathjax>$n_{i}$</mathjax> of each new&nbsp;photon?</p>
+<p>There are two parts to this. Firstly we need to generate the directions. The amount of energy each new photon will have will be related to this also. Secondly each direction vector needs to be rotated such that it points in the &#8216;correct&#8217; manner relative to the surface normal and the original specular outgoing vector, <mathjax>$n_f$</mathjax>, we&#8217;ve derived earlier. We&#8217;ll start with this second&nbsp;part.</p>
 <p><strong>Rotation of a&nbsp;Vector</strong></p>
-<p>There are a few ways to rotate an arbitrary vector (<a class="reference external" href="http://en.wikipedia.org/wiki/Rotation_matrix">obligatory wikipedia link</a>), we will however save our sanity (and hopefully some time) by using Euler Angles. In this we apply a rotation about the cartesian $x,y,z$ axes in turn. This gives us a rotation matrix of the form
-\begin{equation}
-R = R_z(\psi) , R_y(\theta) , R_x(\phi)\,=&#92;&#92;
-\begin{bmatrix}\cos\theta \cos\psi&amp;-\cos\phi\sin\psi + \sin\phi \sin\theta \cos\psi&amp;\sin\phi \sin\psi + \cos\phi \sin\theta \cos\psi &#92;&#92;
-\cos\theta \sin\psi&amp; \cos\phi \cos\psi + \sin\phi \sin\theta \sin\psi&amp;-\sin\phi \cos\psi + \cos\phi \sin\theta \sin\psi &#92;&#92;
--\sin\theta&amp;\sin\phi \cos\theta&amp;\cos\phi \cos\theta \end{bmatrix}&nbsp;\end{equation}</p>
+<p>There are a few ways to rotate an arbitrary vector (<a class="reference external" href="http://en.wikipedia.org/wiki/Rotation_matrix">obligatory wikipedia link</a>), we will however save our sanity (and hopefully some time) by using Euler Angles. In this we apply a rotation about the cartesian <mathjax>$x,y,z$</mathjax> axes in turn. This gives us a rotation matrix of the form
+<mathjax>\begin{equation}
+R = R_z(\psi) , R_y(\theta) , R_x(\phi)\,=\\\\
+\begin{bmatrix}\cos\theta \cos\psi&amp;-\cos\phi\sin\psi + \sin\phi \sin\theta \cos\psi&amp;\sin\phi \sin\psi + \cos\phi \sin\theta \cos\psi \\\\
+\cos\theta \sin\psi&amp; \cos\phi \cos\psi + \sin\phi \sin\theta \sin\psi&amp;-\sin\phi \cos\psi + \cos\phi \sin\theta \sin\psi \\\\
+-\sin\theta&amp;\sin\phi \cos\theta&amp;\cos\phi \cos\theta \end{bmatrix}
+\end{equation}</mathjax></p>
 <p>Combined with
-\begin{equation}
-\vec{v}^\prime = R\cdot \vec{v}&nbsp;\end{equation}</p>
-<p>We now have everything we need to rotate any 3D cartesian vector by angles $\phi,\theta,\psi$. Implemented in Python this&nbsp;becomes</p>
+<mathjax>\begin{equation}
+\vec{v}^\prime = R\cdot \vec{v}
+\end{equation}</mathjax></p>
+<p>We now have everything we need to rotate any 3D cartesian vector by angles <mathjax>$\phi,\theta,\psi$</mathjax>. Implemented in Python this&nbsp;becomes</p>
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">dot</span><span class="p">,</span><span class="n">sin</span><span class="p">,</span><span class="n">cos</span><span class="p">,</span><span class="n">pi</span>
 <span class="k">def</span> <span class="nf">RotateVector</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">theta</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">psi</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
@@ -242,8 +224,8 @@ R = R_z(\psi) , R_y(\theta) , R_x(\phi)\,=&#92;&#92;
 <p>does the job nicely. Remember try not to reinvent the wheel. Especially when wheels made by scientists tend to be knocked up quickly and approximately&nbsp;square.</p>
 <p><strong>Directions for Lobe&nbsp;Reflection</strong></p>
 <p>So Lobe reflections. Specifically we&#8217;re looking to generate a Gaussian profile and spin that around the centre axis to produce a cone. Why a Gaussian I hear you ask? Not a clue, probably something to do with the central limit theorem. In all seriousness any distribution we chose should naturally be symmetrical about no deviation at all, and should probably drop to zero fairly&nbsp;sharpish.</p>
-<p>So Gaussian profile you say. What on earth do you mean? Well we&#8217;re going to consider each photon to be &#8216;kicked&#8217; from the $n_f$ direction we&#8217;ve predicted earlier by a small vector. The size of this vector will be related to this Gaussian distribution. Specifically to the standard deviation of it. This parameter which we&#8217;ll call $\sigma_{\alpha}$. The bigger this number, the bigger the&nbsp;kick.</p>
-<p>We&#8217;ll define $N$ such vectors about the $z$&nbsp;axis</p>
+<p>So Gaussian profile you say. What on earth do you mean? Well we&#8217;re going to consider each photon to be &#8216;kicked&#8217; from the <mathjax>$n_f$</mathjax> direction we&#8217;ve predicted earlier by a small vector. The size of this vector will be related to this Gaussian distribution. Specifically to the standard deviation of it. This parameter which we&#8217;ll call <mathjax>$\sigma_{\alpha}$</mathjax>. The bigger this number, the bigger the&nbsp;kick.</p>
+<p>We&#8217;ll define <mathjax>$N$</mathjax> such vectors about the <mathjax>$z$</mathjax> axis</p>
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
 <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">linspace</span>
 <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">uniform</span>
@@ -274,7 +256,7 @@ R = R_z(\psi) , R_y(\theta) , R_x(\phi)\,=&#92;&#92;
 
     <span class="k">return</span> <span class="n">Weights</span><span class="p">,</span><span class="n">Vectors</span>
 </pre></div>
-<p>The default value is $1.3^\circ$ which is a value I&#8217;ve handily pulled from a <a class="reference external" href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=5485130&amp;url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5485130">research paper</a> (subscription required). The above uses the <em>rvs()</em> function call to to a scipy.stats distribution. This will generate a random number based on the distribution it&#8217;s called from. Particularly handy! As we expect all directions about the axis to be equally likely, the second number is uniform random number. Using those two we can find everything we&nbsp;need.</p>
+<p>The default value is <mathjax>$1.3^\circ$</mathjax> which is a value I&#8217;ve handily pulled from a <a class="reference external" href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=5485130&amp;url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5485130">research paper</a> (subscription required). The above uses the <em>rvs()</em> function call to to a scipy.stats distribution. This will generate a random number based on the distribution it&#8217;s called from. Particularly handy! As we expect all directions about the axis to be equally likely, the second number is uniform random number. Using those two we can find everything we&nbsp;need.</p>
 <p>Below we use the function we&#8217;ve just written along with the rotation code to&nbsp;produce</p>
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span><span class="n">plot</span><span class="p">,</span><span class="n">show</span>
 <span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
@@ -354,6 +336,36 @@ R = R_z(\psi) , R_y(\theta) , R_x(\phi)\,=&#92;&#92;
 <h2>Summary</h2>
 <p>We&#8217;ve now got our box, our light source and four different ways we can consider reflections. Next time we&#8217;ll look at how we&#8217;ll consider photons moving in the box. We&#8217;ll also look at conditions for detection or destruction of a&nbsp;photon.</p>
 </div>
+<script type= "text/javascript">
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+</script>
 
             </div>
             <!-- /.entry-content -->
@@ -362,8 +374,8 @@ R = R_z(\psi) , R_y(\theta) , R_x(\phi)\,=&#92;&#92;
     </section>
 
         </div>
-        <div class="col-lg-3 well well-sm" id="sidebar">
-<aside>
+        <div class="col-lg-3 well well-sm hidden-print" id="sidebar">
+<aside class='hidden-print'>
     <section>
 
             <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Contact Me</h4></li>
@@ -396,8 +408,8 @@ R = R_z(\psi) , R_y(\theta) , R_x(\phi)\,=&#92;&#92;
 <!--            <li class="list-group-item"><a href="http://markbrown.io/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/specular.html">-->
-<!--                        specular-->
+<!--                    <a href="http://markbrown.io/tag/crlb.html">-->
+<!--                        crlb-->
 <!--                    </a>-->
 <!--                </li>-->
 <!--            -->
@@ -414,8 +426,8 @@ R = R_z(\psi) , R_y(\theta) , R_x(\phi)\,=&#92;&#92;
 <!--                </li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/crlb.html">-->
-<!--                        crlb-->
+<!--                    <a href="http://markbrown.io/tag/specular.html">-->
+<!--                        specular-->
 <!--                    </a>-->
 <!--                </li>-->
 <!--            -->
