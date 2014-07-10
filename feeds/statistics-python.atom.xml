@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>markbrown.io</title><link href="http://markbrown.io/" rel="alternate"></link><link href="http://markbrown.io/feeds/statistics-python.atom.xml" rel="self"></link><id>http://markbrown.io/</id><updated>2013-11-29T00:00:00+01:00</updated><entry><title>Function Fitting and the Bootstrap</title><link href="http://markbrown.io/function-fitting-and-the-bootstrap.html" rel="alternate"></link><updated>2013-11-29T00:00:00+01:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-11-29:function-fitting-and-the-bootstrap.html</id><summary type="html">&lt;p&gt;Give raw data here!
-Fits to a Gaussian dataset via the &lt;span class="caps"&gt;MLE&lt;/span&gt; estimate and the curve_fit() function. Show
-results from&amp;nbsp;both.&lt;/p&gt;
-&lt;p&gt;Next discuss resampling the data and bootstrap. Show the violin plots of each of the
-parameter distributions. Discuss confidence intervals and the standard&amp;nbsp;deviation.&lt;/p&gt;
-</summary></entry></feed>
