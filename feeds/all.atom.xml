@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>markbrown.io</title><link href="http://markbrown.io/" rel="alternate"></link><link href="http://markbrown.io/feeds/all.atom.xml" rel="self"></link><id>http://markbrown.io/</id><updated>2014-07-10T00:00:00+02:00</updated><entry><title>Day 0 : Onto a thesis</title><link href="http://markbrown.io/day-0-onto-a-thesis.html" rel="alternate"></link><updated>2014-07-10T00:00:00+02:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2014-07-10:day-0-onto-a-thesis.html</id><summary type="html">&lt;p&gt;The summer remaining is a mere 80 days long.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>markbrown.io</title><link href="http://markbrown.io/" rel="alternate"></link><link href="http://markbrown.io/feeds/all.atom.xml" rel="self"></link><id>http://markbrown.io/</id><updated>2014-08-10T00:00:00+02:00</updated><entry><title>Day 1 : More outlining and Animations</title><link href="http://markbrown.io/day-1-more-outlining-and-animations.html" rel="alternate"></link><updated>2014-08-10T00:00:00+02:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2014-08-10:day-1-more-outlining-and-animations.html</id><summary type="html">&lt;p&gt;I very much lied yesterday - the summer is exactly 77 days long for me from now.
+I guess it&amp;#8217;s a lucky&amp;nbsp;number?&lt;/p&gt;
+&lt;p&gt;&lt;span class="target" id="thesis"&gt;thesis&lt;/span&gt; : &lt;a class="reference external" href="https://github.com/marksbrown/phd_thesis/commit/882d97d0f1d70fd9311d52f769803ad43f5341f2"&gt;https://github.com/marksbrown/phd_thesis/commit/882d97d0f1d70fd9311d52f769803ad43f5341f2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So like the procrastinating individual I am, here is my &lt;a class="reference internal" href="#thesis"&gt;thesis&lt;/a&gt; as today.
+It turns out it gets quite hard trying to decide how to break content down on areas where you&amp;#8217;re less sure of the research.
+Still where there&amp;#8217;s a will there&amp;#8217;s a&amp;nbsp;way.&lt;/p&gt;
+&lt;p&gt;One thing I did figure out today however was the bottleneck in my animation generation.
+It turns out attempting to generate the linear interpolations required over smaller time ranges was sensible.
+I figure I need to plot the energy density in slices through the 3D in real time below.
+I&amp;#8217;ll leave that for my next adventure into&amp;nbsp;procrastination.&lt;/p&gt;
+&lt;p&gt;Enjoy the video! : &lt;a class="reference external" href="http://youtu.be/zB5XsjBNPK4"&gt;http://youtu.be/zB5XsjBNPK4&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="end"&gt;
+&lt;h2&gt;End&lt;/h2&gt;
+&lt;p&gt;Work today brought to you today by a litre of pepsi max, 1 pot of assam and 1 pot of jasmine green&amp;nbsp;tea.&lt;/p&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Day 0 : Onto a thesis</title><link href="http://markbrown.io/day-0-onto-a-thesis.html" rel="alternate"></link><updated>2014-07-10T00:00:00+02:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2014-07-10:day-0-onto-a-thesis.html</id><summary type="html">&lt;p&gt;The summer remaining is a mere 80 days long.
 And frankly no amount of coffee (or whisky) is going to make it any longer.
 So today we&amp;#8217;re on day&amp;nbsp;zero&amp;#8230;crap.&lt;/p&gt;
 &lt;p&gt;&lt;span class="target" id="thesis"&gt;thesis&lt;/span&gt; : &lt;a class="reference external" href="https://github.com/marksbrown/phd_thesis/tree/2d5cb0319fc4c03ec1fa86d370862c79cff45a1f"&gt;https://github.com/marksbrown/phd_thesis/tree/2d5cb0319fc4c03ec1fa86d370862c79cff45a1f&lt;/a&gt;&lt;/p&gt;
