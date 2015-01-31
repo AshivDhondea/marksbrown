@@ -4,7 +4,7 @@
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
 
-    <title>Light in a Box (Part One)</title>
+    <title>Light in a Box (Part&nbsp;One)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
     <!-- Open Graph tags -->
 
             <meta property="og:type" content="article"/>
-            <meta property="og:title" content="Light in a Box (Part One)"/>
+            <meta property="og:title" content="Light in a Box (Part&nbsp;One)"/>
             <meta property="og:url" content="http://markbrown.io/drafts/light-in-a-box-part-one.html"/>
             <meta property="og:description" content="Over the next five posts I’m going to explore some of the mathematics, the physics and ultimately the (Python) coding of simulating the spread of light within a box. As we progress through I’ll attempt to explain anything particularly irksome. In this first post we’ll look at ..."/>
 
@@ -63,7 +63,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li><a href="http://markbrown.io/about/">About</a></li>
-                        <li><a href="http://markbrown.io/cv/">Curriculum Vitae</a></li>
+                        <li><a href="http://markbrown.io/cv/">Curriculum&nbsp;Vitae</a></li>
                         <li><a href="http://markbrown.io/research/">Research</a></li>
                         <li><a href="http://markbrown.io/tutoring/">Tutoring</a></li>
             </ul>
@@ -84,8 +84,8 @@
                 <h1>
                     <a href="http://markbrown.io/drafts/light-in-a-box-part-one.html"
                        rel="bookmark"
-                       title="Permalink to Light in a Box (Part One)">
-                        Light in a Box (Part One)
+                       title="Permalink to Light in a Box (Part&nbsp;One)">
+                        Light in a Box (Part&nbsp;One)
                     </a>
                 </h1>
             </header>
@@ -129,8 +129,8 @@
 </div>
 <div class="section" id="the-light">
 <h2>The&nbsp;Light</h2>
-<p>To begin with we will consider our light source as <mathjax>$N$</mathjax> individual photons. Each photon, a discrete packet of light, will have an energy and a direction. Our first task is to ensure all these photons spread out equally in all directions. This property, which I&#8217;ll call isotropy, just means that we have equal intensity regardless of which way we look at the&nbsp;source.</p>
-<p>We&#8217;ll treat each photon direction as a <a class="reference external" href="http://en.wikipedia.org/wiki/Unit_vector">unit vector</a>. Because of this each direction has an magnitude of one. Handily this means any point on a sphere with a radius of 1, a unit sphere, defines all our possible directions. To generate <mathjax>$N$</mathjax> photons with equally spaced directions becomes a matter of selecting points on the sphere that are equally spaced out. Conveniently methods for doing this are <a class="reference external" href="http://mathworld.wolfram.com/SpherePointPicking.html">numerous</a>.</p>
+<p>To begin with we will consider our light source as $N$ individual photons. Each photon, a discrete packet of light, will have an energy and a direction. Our first task is to ensure all these photons spread out equally in all directions. This property, which I&#8217;ll call isotropy, just means that we have equal intensity regardless of which way we look at the&nbsp;source.</p>
+<p>We&#8217;ll treat each photon direction as a <a class="reference external" href="http://en.wikipedia.org/wiki/Unit_vector">unit vector</a>. Because of this each direction has an magnitude of one. Handily this means any point on a sphere with a radius of 1, a unit sphere, defines all our possible directions. To generate $N$ photons with equally spaced directions becomes a matter of selecting points on the sphere that are equally spaced out. Conveniently methods for doing this are <a class="reference external" href="http://mathworld.wolfram.com/SpherePointPicking.html">numerous</a>.</p>
 <p>In our case we&#8217;ll chose the <em>Marsaglia (1972)</em> method. We can implement this like&nbsp;so</p>
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">RandomPointsOnASphere</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="n">hemisphere</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
@@ -199,8 +199,8 @@
 </pre></div>
 <p>Using this information we can first look at drawing the 3D box we&#8217;ve just described. But to begin with how do we draw all the correct&nbsp;edges?</p>
 <p>First off we need to find the four corners of each face. We can do this because any two corners on the same face will define a vector that is perpendicular to the surface normal. Mathematically we can write
-<mathjax>$$(\vec{c_i}-\vec{c_j}).\vec{s_k} = 0$$</mathjax>
-where <mathjax>$c_i$</mathjax> and <mathjax>$c_j$</mathjax> are two corners (where <mathjax>$i\neq j$</mathjax>) and <mathjax>$s$</mathjax> are the surface vectors. As we need to find four corners that meet this criteria we all four corners to match the above criteria. Essentially we need to look at every combination of 4 corners out of 8 and compare them to each of the 8 surface normals. If all four corners match a single surface normal, we&#8217;ve found a&nbsp;face!</p>
+$$(\vec{c_i}-\vec{c_j}).\vec{s_k} = 0$$
+where $c_i$ and $c_j$ are two corners (where $i\neq j$) and $s$ are the surface vectors. As we need to find four corners that meet this criteria we all four corners to match the above criteria. Essentially we need to look at every combination of 4 corners out of 8 and compare them to each of the 8 surface normals. If all four corners match a single surface normal, we&#8217;ve found a&nbsp;face!</p>
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">PlotFrame</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">axis</span><span class="p">,</span><span class="n">threshold</span><span class="o">=</span><span class="mf">1e-15</span><span class="p">,</span><span class="n">offset</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    plots a 3D wireframe of the box defined by the vertices and surface normals given</span>
@@ -297,36 +297,6 @@ where <mathjax>$c_i$</mathjax> and <mathjax>$c_j$</mathjax> are two corners (whe
 <h2>Summary</h2>
 <p>We&#8217;ve defined our initial directions and drawn our box. Next time we&#8217;ll actually look at the trickier question of getting things to&nbsp;move!</p>
 </div>
-<script type= "text/javascript">
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-    }
-</script>
 
             </div>
             <!-- /.entry-content -->
@@ -369,18 +339,6 @@ where <mathjax>$c_i$</mathjax> and <mathjax>$c_j$</mathjax> are two corners (whe
 <!--            <li class="list-group-item"><a href="http://markbrown.io/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/scintillator.html">-->
-<!--                        scintillator-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--            -->
-<!--                <li class="list-group-item tag-4">-->
-<!--                    <a href="http://markbrown.io/tag/light.html">-->
-<!--                        light-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--            -->
-<!--                <li class="list-group-item tag-4">-->
 <!--                    <a href="http://markbrown.io/tag/crlb.html">-->
 <!--                        crlb-->
 <!--                    </a>-->
@@ -393,8 +351,20 @@ where <mathjax>$c_i$</mathjax> and <mathjax>$c_j$</mathjax> are two corners (whe
 <!--                </li>-->
 <!--            -->
 <!--                <li class="list-group-item tag-4">-->
+<!--                    <a href="http://markbrown.io/tag/light.html">-->
+<!--                        light-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            -->
+<!--                <li class="list-group-item tag-4">-->
 <!--                    <a href="http://markbrown.io/tag/ccc.html">-->
 <!--                        ccc-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            -->
+<!--                <li class="list-group-item tag-4">-->
+<!--                    <a href="http://markbrown.io/tag/scintillator.html">-->
+<!--                        scintillator-->
 <!--                    </a>-->
 <!--                </li>-->
 <!--            -->

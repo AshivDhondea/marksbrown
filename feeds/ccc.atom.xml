@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>markbrown.io</title><link href="http://markbrown.io/" rel="alternate"></link><link href="http://markbrown.io/feeds/ccc.atom.xml" rel="self"></link><id>http://markbrown.io/</id><updated>2013-11-28T00:00:00+01:00</updated><entry><title>Crystal Clear Collaboration</title><link href="http://markbrown.io/ccc/" rel="alternate"></link><updated>2013-11-28T00:00:00+01:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-11-28:ccc/</id><summary type="html">&lt;a class="reference external image-reference" href="http://crystalclear.web.cern.ch/crystalclear/"&gt;&lt;img alt="Crystal Clear Collaboration" class="align-center" src="../images/CCC.png" style="width: 20%;" /&gt;&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>markbrown.io</title><link href="http://markbrown.io/" rel="alternate"></link><link href="http://markbrown.io/feeds/ccc.atom.xml" rel="self"></link><id>http://markbrown.io/</id><updated>2013-11-28T00:00:00+01:00</updated><entry><title>Crystal Clear Collaboration</title><link href="http://markbrown.io/ccc/" rel="alternate"></link><updated>2013-11-28T00:00:00+01:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-11-28:ccc/</id><summary type="html">&lt;a class="reference external image-reference" href="http://crystalclear.web.cern.ch/crystalclear/"&gt;&lt;img alt="Crystal Clear Collaboration" class="align-center" src="../images/CCC.png" style="width: 20%;" /&gt;&lt;/a&gt;
 &lt;p&gt;The Crystal Clear Collaboration (&lt;span class="caps"&gt;CCC&lt;/span&gt;) homepage may be found &lt;a class="reference external" href="http://crystalclear.web.cern.ch/crystalclear/"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section" id="overview"&gt;
 &lt;h2&gt;Overview&lt;/h2&gt;
@@ -11,9 +11,9 @@ scintillator crystal is given. Finally we will look at the varying contribution 
 &lt;div class="section" id="intrinsic-performance"&gt;
 &lt;h2&gt;Intrinsic&amp;nbsp;Performance&lt;/h2&gt;
 &lt;img alt="intrinsic CRLB with N" class="align-center" src="../images/intrinsicCRLBwithN.png" style="width: 100%;" /&gt;
-&lt;p&gt;In the above image we calculate the lower bound in the &lt;span class="caps"&gt;CTR&lt;/span&gt; (the &lt;span class="caps"&gt;CRLB&lt;/span&gt; &lt;span class="caps"&gt;CTR&lt;/span&gt;) with increasing number of samples, &lt;em&gt;N&lt;/em&gt;. The curve(s) follows the characteristic &lt;mathjax&gt;$\frac{1}{\sqrt{N}}$&lt;/mathjax&gt; shape we&amp;nbsp;expect.&lt;/p&gt;
+&lt;p&gt;In the above image we calculate the lower bound in the &lt;span class="caps"&gt;CTR&lt;/span&gt; (the &lt;span class="caps"&gt;CRLB&lt;/span&gt; &lt;span class="caps"&gt;CTR&lt;/span&gt;) with increasing number of samples, &lt;em&gt;N&lt;/em&gt;. The curve(s) follows the characteristic $\frac{1}{\sqrt{N}}$ shape we&amp;nbsp;expect.&lt;/p&gt;
 &lt;img alt="intrinsic CRLB with various rise &amp;amp; decay times" class="align-center" src="../images/intrinsicCRLBwithDecayRise.png" style="width: 50%;" /&gt;
-&lt;p&gt;Next we look at varying the rise and decay times directly. In this case we fix &lt;mathjax&gt;$N=3600$&lt;/mathjax&gt;. This is chosen as it matches the number of pixels within &lt;a class="reference external" href="http://www.hamamatsu.com/eu/en/product/alpha/P/4113/S10931-050P/index.html"&gt;mppc&lt;/a&gt;. In this case we a clear improvement with reductions in the rise and decay&amp;nbsp;time.&lt;/p&gt;
+&lt;p&gt;Next we look at varying the rise and decay times directly. In this case we fix $N=3600$. This is chosen as it matches the number of pixels within &lt;a class="reference external" href="http://www.hamamatsu.com/eu/en/product/alpha/P/4113/S10931-050P/index.html"&gt;mppc&lt;/a&gt;. In this case we a clear improvement with reductions in the rise and decay&amp;nbsp;time.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="crlb-with-light-transport"&gt;
 &lt;h2&gt;&lt;span class="caps"&gt;CRLB&lt;/span&gt; With Light&amp;nbsp;Transport&lt;/h2&gt;
@@ -25,123 +25,58 @@ scintillator crystal is given. Finally we will look at the varying contribution 
 &lt;h2&gt;&lt;span class="caps"&gt;CRLB&lt;/span&gt; With&amp;nbsp;Photodetector&lt;/h2&gt;
 &lt;img alt="CRLB with photodetector. Varying TTS" class="align-center" src="../images/pmtCRLBwithTTS.png" style="width: 100%;" /&gt;
 &lt;p&gt;We convolve the dual exponential distribution describing the scintillator crystal with a gaussian to describe the single photon
-time spread, with &lt;span class="caps"&gt;FWHM&lt;/span&gt; given by the Single Photon Time Resolution (&lt;span class="caps"&gt;SPTR&lt;/span&gt;) within the photodetector. The number of samples &lt;mathjax&gt;$N$&lt;/mathjax&gt; is fixed at 3600 and we vary the &lt;span class="caps"&gt;SPTR&lt;/span&gt;. In this case it&amp;#8217;s clear the decay time - L(Y)&lt;span class="caps"&gt;SO&lt;/span&gt;:Ce of 40ns compared to 30ns of &lt;span class="caps"&gt;LSO&lt;/span&gt;:CeCa has a large&amp;nbsp;effect.&lt;/p&gt;
+time spread, with &lt;span class="caps"&gt;FWHM&lt;/span&gt; given by the Single Photon Time Resolution (&lt;span class="caps"&gt;SPTR&lt;/span&gt;) within the photodetector. The number of samples $N$ is fixed at 3600 and we vary the &lt;span class="caps"&gt;SPTR&lt;/span&gt;. In this case it&amp;#8217;s clear the decay time - L(Y)&lt;span class="caps"&gt;SO&lt;/span&gt;:Ce of 40ns compared to 30ns of &lt;span class="caps"&gt;LSO&lt;/span&gt;:CeCa has a large&amp;nbsp;effect.&lt;/p&gt;
 &lt;img alt="skew normal distribution" class="align-center" src="../images/skewnormaldist.png" style="width: 100%;" /&gt;
 &lt;p&gt;Next we look at a non-symmetric &lt;span class="caps"&gt;SPTR&lt;/span&gt; distribution; Namely the skew-normal distribution shown above in red for negative skew and in blue for positive. The green line indicates the normal&amp;nbsp;Gaussian.&lt;/p&gt;
 &lt;img alt="CRLB for non-zero skew with increasing FWHM" class="align-center" src="../images/pmtCRLBwithFWHM.png" style="width: 100%;" /&gt;
 &lt;p&gt;Above we use the skew-normal distribution for various &lt;span class="caps"&gt;FWHM&lt;/span&gt; values to determine the &lt;span class="caps"&gt;CRLB&lt;/span&gt; with skew. As the &lt;span class="caps"&gt;FWHM&lt;/span&gt; of the &lt;span class="caps"&gt;SPTR&lt;/span&gt; distribution will vary with skew we see that the skewness must be determind to accurately predict the &lt;span class="caps"&gt;CRLB&lt;/span&gt;.&lt;/p&gt;
 &lt;/div&gt;
-&lt;script type= "text/javascript"&gt;
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-    }
-&lt;/script&gt;
-</summary><category term="ccc"></category><category term="crlb"></category><category term="scintillator"></category></entry><entry><title>Light Transport</title><link href="http://markbrown.io/ccc/lightransport.html" rel="alternate"></link><updated>2013-11-28T00:00:00+01:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-11-28:ccc/lightransport.html</id><summary type="html">&lt;div class="section" id="analytical-light-transport"&gt;
+</summary><category term="ccc"></category><category term="crlb"></category><category term="scintillator"></category></entry><entry><title>Light Transport</title><link href="http://markbrown.io/ccc/lightransport.html" rel="alternate"></link><updated>2013-11-28T00:00:00+01:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-11-28:ccc/lightransport.html</id><summary type="html">&lt;div class="section" id="analytical-light-transport"&gt;
 &lt;h2&gt;Analytical Light&amp;nbsp;Transport&lt;/h2&gt;
 &lt;img alt="Specular PDF from Analytical Expression" class="align-center" src="../images/SpecularPDFAnalytical.png" style="width: 100%;" /&gt;
-&lt;p&gt;On this page we will give the derivation for the specular &lt;span class="caps"&gt;PDF&lt;/span&gt;, &lt;mathjax&gt;$p(t)$&lt;/mathjax&gt;. The analytical expression is shown above as a sum of two modes; Namely the forward and backward, corresponding to light transport within a regular cuboid scintillator crystal of dimensions &lt;mathjax&gt;$2\times2\times20$&lt;/mathjax&gt;mm&lt;mathjax&gt;$^3$&lt;/mathjax&gt;, with a depth of interaction (&lt;span class="caps"&gt;DOI&lt;/span&gt;) of&amp;nbsp;10mm.&lt;/p&gt;
+&lt;p&gt;On this page we will give the derivation for the specular &lt;span class="caps"&gt;PDF&lt;/span&gt;, $p(t)$. The analytical expression is shown above as a sum of two modes; Namely the forward and backward, corresponding to light transport within a regular cuboid scintillator crystal of dimensions $2\times2\times20$mm$^3$, with a depth of interaction (&lt;span class="caps"&gt;DOI&lt;/span&gt;) of&amp;nbsp;10mm.&lt;/p&gt;
 &lt;img alt="Specular PDF from Monte Carlo" class="align-center" src="../images/SpecularPDFMonteCarlo.png" style="width: 100%;" /&gt;
 &lt;p&gt;The above image is the specular &lt;span class="caps"&gt;PDF&lt;/span&gt; taken from Monte-Carlo ray tracing of a regular&amp;nbsp;cuboid.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-derivation"&gt;
 &lt;h2&gt;The&amp;nbsp;Derivation&lt;/h2&gt;
-&lt;p&gt;We begin by looking at an isotropic source placed between two infinite faces. The source is a distance, &lt;span class="caps"&gt;DOI&lt;/span&gt;, from one face, which we shall refer to as the top face. The opposing face shall be referred to as the bottom face. The two faces are separated by a distance &lt;mathjax&gt;$L$&lt;/mathjax&gt;. Between the two faces the refractive index is &lt;mathjax&gt;$n_s$&lt;/mathjax&gt;. Using the time-averaged Poynting vector incident per unit solid angle, , the power (&lt;mathjax&gt;$P$&lt;/mathjax&gt;) per unit solid angle, can be defined as
-&lt;mathjax&gt;\begin{align}
+&lt;p&gt;We begin by looking at an isotropic source placed between two infinite faces. The source is a distance, &lt;span class="caps"&gt;DOI&lt;/span&gt;, from one face, which we shall refer to as the top face. The opposing face shall be referred to as the bottom face. The two faces are separated by a distance $L$. Between the two faces the refractive index is $n_s$. Using the time-averaged Poynting vector incident per unit solid angle, , the power ($P$) per unit solid angle, can be defined as
+\begin{align}
 \frac{dP}{d\Omega} = \frac{r^2}{2}\vec{n}.\vec{E}\times\vec{H^*}
-\end{align}&lt;/mathjax&gt;
-where &lt;mathjax&gt;$\vec{n}$&lt;/mathjax&gt; is the direction of interest, &lt;mathjax&gt;$\vec{E}$&lt;/mathjax&gt; is the electric field, &lt;mathjax&gt;$\vec{H}^*$&lt;/mathjax&gt; is the complex conjugate of the magnetic field and &lt;mathjax&gt;$\Omega$&lt;/mathjax&gt; is the solid angle subtended. For a spherical wave we therefore find
-&lt;mathjax&gt;\begin{align}
-\begin{pmatrix}\vec{E} \\\\ \vec{H}\end{pmatrix} &amp;amp;= A_0\begin{pmatrix}\hat{\theta} \\\\ \hat{\phi}\end{pmatrix}\frac{1}{r}e^{i\vec{k}.\vec{r}}e^{-i\omega t}\\\\
-\therefore \frac{dP}{d\Omega} &amp;amp;= \frac{A_0^2}{2}\vec{n}.\vec{r}
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;By letting &lt;mathjax&gt;$\vec{n}=\vec{r}$&lt;/mathjax&gt;, we find the power per unit solid angle is constant regardless of direction. This is as expected for an isotropic source. Integrating over the solid angle with ranges &lt;mathjax&gt;$\{\theta,\theta_1,\theta_2\}$&lt;/mathjax&gt; and &lt;mathjax&gt;$\{\phi,0,2\pi\}$&lt;/mathjax&gt; it can be shown&amp;nbsp;that&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;\begin{align}
-P(\theta_1,\theta_2) &amp;amp;= \int \frac{dP}{d\Omega} d\Omega = \frac{A_0^2}{2}\int\limits_{\phi=0}^{2\pi}\int\limits_{\theta=\theta_1}^{\theta_2}\sin\theta d\theta d\phi \\\\
-&amp;amp;=\pi A_0^2(\cos\theta_1-\cos\theta_2)
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;Consider &lt;mathjax&gt;$\theta_1$&lt;/mathjax&gt; is zero with &lt;mathjax&gt;$\theta_2=\theta$&lt;/mathjax&gt; we arrive at
-&lt;mathjax&gt;\begin{align}
-P(\theta) &amp;amp;= \pi A_0^2(1-\cos\theta)\\\\
+\end{align}
+where $\vec{n}$ is the direction of interest, $\vec{E}$ is the electric field, $\vec{H}^*$ is the complex conjugate of the magnetic field and $\Omega$ is the solid angle subtended. For a spherical wave we therefore find
+\begin{align}
+\begin{pmatrix}\vec{E} &amp;#92;&amp;#92; \vec{H}\end{pmatrix} &amp;amp;= A_0\begin{pmatrix}\hat{\theta} &amp;#92;&amp;#92; \hat{\phi}\end{pmatrix}\frac{1}{r}e^{i\vec{k}.\vec{r}}e^{-i\omega t}&amp;#92;&amp;#92;
+\therefore \frac{dP}{d\Omega} &amp;amp;= \frac{A_0^2}{2}\vec{n}.\vec{r}&amp;nbsp;\end{align}&lt;/p&gt;
+&lt;p&gt;By letting $\vec{n}=\vec{r}$, we find the power per unit solid angle is constant regardless of direction. This is as expected for an isotropic source. Integrating over the solid angle with ranges $\{\theta,\theta_1,\theta_2\}$ and $\{\phi,0,2\pi\}$ it can be shown&amp;nbsp;that&lt;/p&gt;
+&lt;p&gt;\begin{align}
+P(\theta_1,\theta_2) &amp;amp;= \int \frac{dP}{d\Omega} d\Omega = \frac{A_0^2}{2}\int\limits_{\phi=0}^{2\pi}\int\limits_{\theta=\theta_1}^{\theta_2}\sin\theta d\theta d\phi &amp;#92;&amp;#92;
+&amp;amp;=\pi A_0^2(\cos\theta_1-\cos\theta_2)&amp;nbsp;\end{align}&lt;/p&gt;
+&lt;p&gt;Consider $\theta_1$ is zero with $\theta_2=\theta$ we arrive at
+\begin{align}
+P(\theta) &amp;amp;= \pi A_0^2(1-\cos\theta)&amp;#92;&amp;#92;
 F(\theta) = \frac{P}{P_0} &amp;amp;= \frac{1}{2}(1-\cos\theta)
-\end{align}&lt;/mathjax&gt;
-where &lt;mathjax&gt;$P_0$&lt;/mathjax&gt; is total power emitted into the full &lt;mathjax&gt;$4\pi$&lt;/mathjax&gt; sphere which can be seen to be &lt;mathjax&gt;$2\pi A_0^2$&lt;/mathjax&gt;. To find the power per unit angle consider &lt;mathjax&gt;$\theta_1=\theta$&lt;/mathjax&gt; and &lt;mathjax&gt;$\theta_2=\theta+d\theta$&lt;/mathjax&gt;, such that
-&lt;mathjax&gt;\begin{align}
-dP &amp;amp;= \frac{P_0}{2}(\cos\theta - \cos(\theta+d\theta))\\\\
-\therefore \frac{1}{P_0}\frac{dP}{d\theta}&amp;amp;=\frac{1}{2}\sin\theta
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;For an isotropic source a distance &lt;mathjax&gt;$z$&lt;/mathjax&gt; from the boundary we see
-&lt;mathjax&gt;\begin{align}
+\end{align}
+where $P_0$ is total power emitted into the full $4\pi$ sphere which can be seen to be $2\pi A_0^2$. To find the power per unit angle consider $\theta_1=\theta$ and $\theta_2=\theta+d\theta$, such that
+\begin{align}
+dP &amp;amp;= \frac{P_0}{2}(\cos\theta - \cos(\theta+d\theta))&amp;#92;&amp;#92;
+\therefore \frac{1}{P_0}\frac{dP}{d\theta}&amp;amp;=\frac{1}{2}\sin\theta&amp;nbsp;\end{align}&lt;/p&gt;
+&lt;p&gt;For an isotropic source a distance $z$ from the boundary we see
+\begin{align}
 t(\theta) = \frac{n\text{z}}{c}\frac{1}{\cos\theta} = \frac{t_0}{\cos\theta}
-\end{align}&lt;/mathjax&gt;
-&lt;mathjax&gt;\begin{align}
+\end{align}
+\begin{align}
 \frac{d\theta}{dt}=\frac{1}{t_0}\frac{\cos^2\theta}{\sin\theta}
-\end{align}&lt;/mathjax&gt;
-where &lt;mathjax&gt;$c$&lt;/mathjax&gt; is the speed of light and &lt;mathjax&gt;$t_0$&lt;/mathjax&gt; is the minimum time to the top face. Combining this with the power per unit theta, results in the rate of change of power with time giving,
-&lt;mathjax&gt;\begin{align}
+\end{align}
+where $c$ is the speed of light and $t_0$ is the minimum time to the top face. Combining this with the power per unit theta, results in the rate of change of power with time giving,
+\begin{align}
 \frac{dP}{dt} = \frac{t_0P_0}{2}\frac{1}{t^2}
-\end{align}&lt;/mathjax&gt;
-Given a maximum allowed travel time, &lt;mathjax&gt;$t_1$&lt;/mathjax&gt;, due to the critical angle of the boundary, a &lt;span class="caps"&gt;PDF&lt;/span&gt; defining the light transport, &lt;mathjax&gt;$p(t)$&lt;/mathjax&gt;, can be found&amp;nbsp;by&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;\begin{align}
-p(t)= A\frac{t_0P_0}{2}\int\limits_{t=t_0}^{t_1}\frac{1}{t^2}dt = 1
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;where &lt;mathjax&gt;$t_1=\frac{t_0}{\cos\theta_c}$&lt;/mathjax&gt; the &lt;span class="caps"&gt;PDF&lt;/span&gt; defining light transport for the perfectly specular case is given&amp;nbsp;by&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;\begin{equation}
-p(t|t_0,\theta_c) = \frac{t_0}{1-\cos\theta_c}\frac{1}{t^2}
-\end{equation}&lt;/mathjax&gt;&lt;/p&gt;
+\end{align}
+Given a maximum allowed travel time, $t_1$, due to the critical angle of the boundary, a &lt;span class="caps"&gt;PDF&lt;/span&gt; defining the light transport, $p(t)$, can be found&amp;nbsp;by&lt;/p&gt;
+&lt;p&gt;\begin{align}
+p(t)= A\frac{t_0P_0}{2}\int\limits_{t=t_0}^{t_1}\frac{1}{t^2}dt = 1&amp;nbsp;\end{align}&lt;/p&gt;
+&lt;p&gt;where $t_1=\frac{t_0}{\cos\theta_c}$ the &lt;span class="caps"&gt;PDF&lt;/span&gt; defining light transport for the perfectly specular case is given&amp;nbsp;by&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+p(t|t_0,\theta_c) = \frac{t_0}{1-\cos\theta_c}\frac{1}{t^2}&amp;nbsp;\end{equation}&lt;/p&gt;
 &lt;/div&gt;
-&lt;script type= "text/javascript"&gt;
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-    }
-&lt;/script&gt;
 </summary><category term="light"></category><category term="specular"></category></entry></feed>

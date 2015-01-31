@@ -1,90 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>markbrown.io</title><link href="http://markbrown.io/" rel="alternate"></link><link href="http://markbrown.io/feeds/all.atom.xml" rel="self"></link><id>http://markbrown.io/</id><updated>2014-08-10T00:00:00+02:00</updated><entry><title>Day 1 : More outlining and Animations</title><link href="http://markbrown.io/day-1-more-outlining-and-animations.html" rel="alternate"></link><updated>2014-08-10T00:00:00+02:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2014-08-10:day-1-more-outlining-and-animations.html</id><summary type="html">&lt;p&gt;I very much lied yesterday - the summer is exactly 77 days long for me from now.
-I guess it&amp;#8217;s a lucky&amp;nbsp;number?&lt;/p&gt;
-&lt;p&gt;&lt;span class="target" id="thesis"&gt;thesis&lt;/span&gt; : &lt;a class="reference external" href="https://github.com/marksbrown/phd_thesis/commit/882d97d0f1d70fd9311d52f769803ad43f5341f2"&gt;https://github.com/marksbrown/phd_thesis/commit/882d97d0f1d70fd9311d52f769803ad43f5341f2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;So like the procrastinating individual I am, here is my &lt;a class="reference internal" href="#thesis"&gt;thesis&lt;/a&gt; as today.
-It turns out it gets quite hard trying to decide how to break content down on areas where you&amp;#8217;re less sure of the research.
-Still where there&amp;#8217;s a will there&amp;#8217;s a&amp;nbsp;way.&lt;/p&gt;
-&lt;p&gt;One thing I did figure out today however was the bottleneck in my animation generation.
-It turns out attempting to generate the linear interpolations required over smaller time ranges was sensible.
-I figure I need to plot the energy density in slices through the 3D in real time below.
-I&amp;#8217;ll leave that for my next adventure into&amp;nbsp;procrastination.&lt;/p&gt;
-&lt;p&gt;Enjoy the video! : &lt;a class="reference external" href="http://youtu.be/zB5XsjBNPK4"&gt;http://youtu.be/zB5XsjBNPK4&lt;/a&gt;&lt;/p&gt;
-&lt;div class="section" id="end"&gt;
-&lt;h2&gt;End&lt;/h2&gt;
-&lt;p&gt;Work today brought to you today by a litre of pepsi max, 1 pot of assam and 1 pot of jasmine green&amp;nbsp;tea.&lt;/p&gt;
-&lt;/div&gt;
-</summary></entry><entry><title>Day 0 : Onto a thesis</title><link href="http://markbrown.io/day-0-onto-a-thesis.html" rel="alternate"></link><updated>2014-07-10T00:00:00+02:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2014-07-10:day-0-onto-a-thesis.html</id><summary type="html">&lt;p&gt;The summer remaining is a mere 80 days long.
-And frankly no amount of coffee (or whisky) is going to make it any longer.
-So today we&amp;#8217;re on day&amp;nbsp;zero&amp;#8230;crap.&lt;/p&gt;
-&lt;p&gt;&lt;span class="target" id="thesis"&gt;thesis&lt;/span&gt; : &lt;a class="reference external" href="https://github.com/marksbrown/phd_thesis/tree/2d5cb0319fc4c03ec1fa86d370862c79cff45a1f"&gt;https://github.com/marksbrown/phd_thesis/tree/2d5cb0319fc4c03ec1fa86d370862c79cff45a1f&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Okay so my &lt;a class="reference internal" href="#thesis"&gt;thesis&lt;/a&gt; as of 10 or so pm, (with Laphroaig in hand) consists of an outline and a slightly more detailed&amp;nbsp;outline!&lt;/p&gt;
-&lt;p&gt;Over the next few months I will be writing a post every day on my [death march|progress] towards a thesis.
-Perhaps on a more upbeat point, I hope to point out anything useful I&amp;#8217;ve picked up along the way of my 8 years of academia.
-At the very least it&amp;#8217;ll be a (terrifying) insight into caffeine poisoning.&amp;nbsp;So&amp;#8230;.&lt;/p&gt;
-&lt;div class="section" id="today-i"&gt;
-&lt;h2&gt;Today I&amp;nbsp;&amp;#8230;&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;The sub-outline for the first two chapters has been&amp;nbsp;written.&lt;/li&gt;
-&lt;li&gt;New and interesting measurements collected from the &lt;span class="caps"&gt;TCSPC&lt;/span&gt; (Time Correlated Single Photon&amp;nbsp;Counting).&lt;/li&gt;
-&lt;li&gt;&lt;span class="caps"&gt;UV&lt;/span&gt; spectrophotometer measurements show &lt;span class="caps"&gt;PTFE&lt;/span&gt; tape has a transmittance above&amp;nbsp;zero.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;img alt="Plumbers tape transmission" class="align-center" src="../images/PTFE_transmittance_UV_spectrophotometer.png" style="width: 50%;" /&gt;
-&lt;p&gt;&amp;#8230;clear right? Right?? Of course not.
-What the heck is &lt;span class="caps"&gt;PTFE&lt;/span&gt; or &lt;span class="caps"&gt;TCSPC&lt;/span&gt;?
-What&amp;#8217;s with two acronyms?!
-So right, the above isn&amp;#8217;t the interesting bits.
-What they mean is!&amp;nbsp;So&amp;#8230;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;In my mind a detailed plan means I can write those chapters quickly since I can picture their&amp;nbsp;layout.&lt;/li&gt;
-&lt;li&gt;These measurements show how my samples respond with light at very short time scales. Best of all the measurements show some interesting behaviour! Scientists (amongst others) love&amp;nbsp;interesting.&lt;/li&gt;
-&lt;li&gt;&lt;span class="caps"&gt;PTFE&lt;/span&gt; tape (commonly bought from BnQ to seal leaky pipes) is used loads in my work. It seems to have light leak through even several layers of the stuff. This will need&amp;nbsp;confirming.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="end"&gt;
-&lt;h2&gt;End&lt;/h2&gt;
-&lt;p&gt;Work today brought to you today by 3 coffees, 2 teas and thai green&amp;nbsp;curry.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="p-s"&gt;
-&lt;h2&gt;&lt;span class="caps"&gt;P.S.&lt;/span&gt;&lt;/h2&gt;
-&lt;p&gt;I must say vim continues to surprise me.
-It seems it knows the correct spelling of Laphroaig and I don&amp;#8217;t.&amp;nbsp;Cheers!&lt;/p&gt;
-&lt;/div&gt;
-</summary></entry><entry><title>Cramer Rao Lower Bound</title><link href="http://markbrown.io/cramer-rao-lower-bound.html" rel="alternate"></link><updated>2013-11-29T00:00:00+01:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-11-29:cramer-rao-lower-bound.html</id><summary type="html">&lt;p&gt;The time resolution of the scintillator detector may be estimated from a probability density function (&lt;span class="caps"&gt;PDF&lt;/span&gt;) describing the signal generated by a given particle interaction. To understand how this is accomplished, a (brief) introduction to Likelihood statistics is&amp;nbsp;given.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>markbrown.io</title><link href="http://markbrown.io/" rel="alternate"></link><link href="http://markbrown.io/feeds/all.atom.xml" rel="self"></link><id>http://markbrown.io/</id><updated>2013-11-29T00:00:00+01:00</updated><entry><title>Cramer Rao Lower Bound</title><link href="http://markbrown.io/cramer-rao-lower-bound.html" rel="alternate"></link><updated>2013-11-29T00:00:00+01:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-11-29:cramer-rao-lower-bound.html</id><summary type="html">&lt;p&gt;The time resolution of the scintillator detector may be estimated from a probability density function (&lt;span class="caps"&gt;PDF&lt;/span&gt;) describing the signal generated by a given particle interaction. To understand how this is accomplished, a (brief) introduction to Likelihood statistics is&amp;nbsp;given.&lt;/p&gt;
 &lt;p&gt;The likelihood function is the probability of &amp;#8216;guessed&amp;#8217; parameters for observed data. Whereas the &lt;span class="caps"&gt;PDF&lt;/span&gt; is the probability of data given parameters, the likelihood function is the probability of parameters given data. It is intuitive to see that the likelihood function will reach a maximum when the parameters are the most likely. We therefore define
-&lt;mathjax&gt;\begin{align}
-L(\theta|t) = p(t|\Theta)\\\\
+\begin{align}
+L(\theta|t) = p(t|\Theta)&amp;#92;&amp;#92;
 \lambda(t|\Theta) = \ln{p(t|\Theta)}
-\end{align}&lt;/mathjax&gt;
-where &lt;mathjax&gt;$L$&lt;/mathjax&gt; is the likelihood function, &lt;mathjax&gt;$p$&lt;/mathjax&gt; is the probability density function, &lt;mathjax&gt;$\lambda$&lt;/mathjax&gt; is the log-likelihood function, &lt;mathjax&gt;$t$&lt;/mathjax&gt; is a given observed event and &lt;mathjax&gt;$\theta$&lt;/mathjax&gt; is the parameter under interest. For &lt;mathjax&gt;$N$&lt;/mathjax&gt; individual events, a random sample &lt;mathjax&gt;$\vec{t}=\{t_1,t_2,\cdots,t_n\}$&lt;/mathjax&gt;, with no order implied, these equations become
-&lt;mathjax&gt;\begin{align}
-L(\Theta|\vec{t}) = \prod^n_{i=1}p(t_i|\Theta)\\\\
+\end{align}
+where $L$ is the likelihood function, $p$ is the probability density function, $\lambda$ is the log-likelihood function, $t$ is a given observed event and $\theta$ is the parameter under interest. For $N$ individual events, a random sample $\vec{t}=\{t_1,t_2,\cdots,t_n\}$, with no order implied, these equations become
+\begin{align}
+L(\Theta|\vec{t}) = \prod^n_{i=1}p(t_i|\Theta)&amp;#92;&amp;#92;
 \lambda_n(\vec{t}|\Theta) = \sum^n_{i=1}\lambda(t_i|\Theta)
-\end{align}&lt;/mathjax&gt;
-As the likelihood function defines the probability the estimated parameters are correct, it is natural to maximise &lt;mathjax&gt;$L$&lt;/mathjax&gt; to find the most likely parameters for the sample &lt;mathjax&gt;$\vec{t}$&lt;/mathjax&gt;. The definition above however will generally be zero, except for exceedingly close to the correct values, due to the product of many infinitesimally small numbers. Due to this we generally maximise the log-likelihood as the resulting parameters we find will be the same, but the distribution of the log-likelihood function about the optimal parameters will be smoother. This method is known as Maximum Likelihood Estimation (&lt;span class="caps"&gt;MLE&lt;/span&gt;) &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;&amp;nbsp;.&lt;/p&gt;
+\end{align}
+As the likelihood function defines the probability the estimated parameters are correct, it is natural to maximise $L$ to find the most likely parameters for the sample $\vec{t}$. The definition above however will generally be zero, except for exceedingly close to the correct values, due to the product of many infinitesimally small numbers. Due to this we generally maximise the log-likelihood as the resulting parameters we find will be the same, but the distribution of the log-likelihood function about the optimal parameters will be smoother. This method is known as Maximum Likelihood Estimation (&lt;span class="caps"&gt;MLE&lt;/span&gt;) &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;&amp;nbsp;.&lt;/p&gt;
 &lt;p&gt;The parameter of interest for the timing performance of a scintillator detector is the absolute time of arrival of a high energy particle within the scintillator crystal. The standard deviation of the uncertainty within this parameter we shall refer to as the time&amp;nbsp;resolution.&lt;/p&gt;
 &lt;div class="section" id="the-scintillation-mechanism"&gt;
 &lt;h2&gt;The Scintillation&amp;nbsp;Mechanism&lt;/h2&gt;
 &lt;img alt="pdf and cdf for LSO" src="/images/LSO-pdf-cdf.png" style="width: 80%;" /&gt;
 &lt;p&gt;The rate of photon generation within the scintillator crystal typically described by two exponentials[&lt;span class="caps"&gt;REFERENCE&lt;/span&gt;]. The &lt;span class="caps"&gt;PDF&lt;/span&gt; is given&amp;nbsp;by&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;\begin{align}
-p(t|\Theta,\tau_r,\tau_d) = \begin{cases}\frac{1}{\tau_d-\tau_r}\Big[e^{\frac{-(t-\Theta)}{\tau_d}}-e^{\frac{-(t-\Theta)}{\tau_r}}\Big] &amp;amp;\qquad\mbox{if } t \geq\Theta \\\\
+&lt;p&gt;\begin{align}
+p(t|\Theta,\tau_r,\tau_d) = \begin{cases}\frac{1}{\tau_d-\tau_r}\Big[e^{\frac{-(t-\Theta)}{\tau_d}}-e^{\frac{-(t-\Theta)}{\tau_r}}\Big] &amp;amp;\qquad\mbox{if } t \geq\Theta &amp;#92;&amp;#92;
 0 &amp;amp;\qquad \mbox{if } t &amp;lt; \Theta \end{cases}
-\label{eqn:dual}
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;where &lt;mathjax&gt;$\tau_r$&lt;/mathjax&gt; is the rise time, &lt;mathjax&gt;$\tau_d$&lt;/mathjax&gt; is the decay time and &lt;mathjax&gt;$\Theta$&lt;/mathjax&gt; is the particle conversion time within the scintillator&amp;nbsp;crystal.&lt;/p&gt;
+\label{eqn:dual}&amp;nbsp;\end{align}&lt;/p&gt;
+&lt;p&gt;where $\tau_r$ is the rise time, $\tau_d$ is the decay time and $\Theta$ is the particle conversion time within the scintillator&amp;nbsp;crystal.&lt;/p&gt;
 &lt;div class="section" id="cramer-rao-derivation"&gt;
 &lt;h3&gt;Cramer-Rao&amp;nbsp;Derivation&lt;/h3&gt;
-&lt;p&gt;We begin by determining the expectation value of
-&lt;mathjax&gt;$\frac{\partial\lambda_n}{\partial\Theta}$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;\begin{align}
+&lt;p&gt;We begin by determining the expectation value of&amp;nbsp;$\frac{\partial\lambda_n}{\partial\Theta}$&lt;/p&gt;
+&lt;p&gt;\begin{align}
 \frac{\partial\lambda_n}{\partial\Theta} = \frac{\partial}{\partial\Theta}\ln p_n(\vec{t}|\Theta)=
 \frac{1}{p_n}\frac{\partial p_n}{\partial\Theta}
-\\\\
-\textrm{E}[\Big(\frac{\partial\lambda_n}{\partial\Theta}\Big)] = \int\cdots\int \frac{1}{p_n}\frac{\partial p_n}{\partial\Theta}f_n dt_1\cdots dt_n\\\\
+&amp;#92;&amp;#92;
+\textrm{E}[\Big(\frac{\partial\lambda_n}{\partial\Theta}\Big)] = \int\cdots\int \frac{1}{p_n}\frac{\partial p_n}{\partial\Theta}f_n dt_1\cdots dt_n&amp;#92;&amp;#92;
 \textrm{E}[\Big(\frac{\partial\lambda_n}{\partial\Theta}\Big)] = \int\cdots\int \frac{\partial p_n}{\partial\Theta} dt_1\cdots dt_n = 0
-\label{eqn:tozero}
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
+\label{eqn:tozero}&amp;nbsp;\end{align}&lt;/p&gt;
 &lt;p&gt;This equals zero because one of the properties of the &lt;span class="caps"&gt;PDF&lt;/span&gt;&amp;nbsp;is&lt;/p&gt;
 &lt;div class="formula"&gt;
 &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="symbol"&gt;∫&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;S&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;t&lt;/i&gt;|Θ)&lt;i&gt;dt&lt;/i&gt; = 1
@@ -98,13 +44,12 @@ terms of variance such&amp;nbsp;that&lt;/p&gt;
 &lt;span class="textrm"&gt;Var&lt;/span&gt;[&lt;i&gt;X&lt;/i&gt;]: = &lt;span class="textrm"&gt;Cov&lt;/span&gt;[&lt;i&gt;X&lt;/i&gt;, &lt;i&gt;X&lt;/i&gt;] = &lt;i&gt;E&lt;/i&gt;[&lt;i&gt;X&lt;/i&gt;&lt;sup&gt;2&lt;/sup&gt;] − &lt;i&gt;E&lt;/i&gt;[&lt;i&gt;X&lt;/i&gt;]&lt;sup&gt;2&lt;/sup&gt;
 &lt;/div&gt;
 &lt;p&gt;Therefore&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;\begin{align}
+&lt;p&gt;\begin{align}
 \textrm{Var}[\Big(\frac{\partial\lambda}{\partial\Theta}\Big)] =
-E[\Big(\frac{\partial\lambda}{\partial\Theta}\Big)^2]-E[\Big(\frac{\partial\lambda}{\partial\Theta}\Big)]^2\\\\
+E[\Big(\frac{\partial\lambda}{\partial\Theta}\Big)^2]-E[\Big(\frac{\partial\lambda}{\partial\Theta}\Big)]^2&amp;#92;&amp;#92;
 I(\Theta) = \textrm{Var}[\Big(\frac{\partial\lambda}{\partial\Theta}\Big)] =
 E[\Big(\frac{\partial\lambda}{\partial\Theta}\Big)^2]
-\label{eqn:varfisher}
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
+\label{eqn:varfisher}&amp;nbsp;\end{align}&lt;/p&gt;
 &lt;p&gt;Using this result we can use the Cauchy-Schwarz&amp;nbsp;inequality&lt;/p&gt;
 &lt;div class="formula"&gt;
 &lt;span class="bigsymbol"&gt;(&lt;/span&gt;&lt;span class="textrm"&gt;Cov&lt;/span&gt;[&lt;i&gt;X&lt;/i&gt;, &lt;i&gt;Y&lt;/i&gt;]&lt;span class="bigsymbol"&gt;)&lt;/span&gt;&lt;sup&gt;2&lt;/sup&gt; ≤ &lt;i&gt;σ&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;X&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;&lt;i&gt;σ&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;&lt;a class="eqnumber" name="eqn:inequality"&gt; &lt;/a&gt;
@@ -120,26 +65,24 @@ parameter to the Fisher Information. Firstly We define a statistic
  which is an estimator of the parameter
 &lt;span class="formula"&gt;Θ&lt;/span&gt;
 . Using equation [eqn:inequality] we see&amp;nbsp;that&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;\begin{align}
+&lt;p&gt;\begin{align}
 \textrm{Cov}[T,\frac{\partial\lambda_n}{\partial\Theta}] = E[T\frac{\partial\lambda_n}{\partial\Theta}]-
-E[T]E[\frac{\partial\lambda_n}{\partial\Theta}]
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
+E[T]E[\frac{\partial\lambda_n}{\partial\Theta}]&amp;nbsp;\end{align}&lt;/p&gt;
 &lt;p&gt;Which using equation \ref{eqn:tozero} reduces to
-&lt;mathjax&gt;\begin{align}
+\begin{align}
 \textrm{Cov}[T,\frac{\partial\lambda_n}{\partial\Theta}] = \int\cdots\int r(\vec{t})\frac{\partial\lambda_n}{\partial\Theta}
 dt_1\cdots dt_n =\frac{\partial m(\Theta)}{\partial\Theta}
-\end{align}&lt;/mathjax&gt;
+\end{align}
 Therefore using the Cauchy-Schwarz inequality with equations \ref{eqn:varfisher} and \ref{eqn:nfisher} we now see
-&lt;mathjax&gt;\begin{align}
+\begin{align}
 \Big(\textrm{Cov}[T,\frac{\partial\lambda_n}{\partial\Theta}]\Big)^2
-\leq \textrm{Var}[T]\textrm{Var}[\frac{\partial\lambda_n}{\partial\Theta}]\\\\
-\Big(\frac{\partial m(\Theta)}{\partial\Theta}\Big)^2 \leq \textrm{Var}[T]nI(\Theta)\\\\
+\leq \textrm{Var}[T]\textrm{Var}[\frac{\partial\lambda_n}{\partial\Theta}]&amp;#92;&amp;#92;
+\Big(\frac{\partial m(\Theta)}{\partial\Theta}\Big)^2 \leq \textrm{Var}[T]nI(\Theta)&amp;#92;&amp;#92;
 \boxed{\textrm{Var}[T] \geq \Big(\frac{\partial m(\Theta)}{\partial\Theta}\Big)^2\frac{1}{nI(\Theta)}}
-\end{align}&lt;/mathjax&gt;
-And thus we get to the Cramer-Rao lower bound. For this to be valid, the statistic &lt;mathjax&gt;$T$&lt;/mathjax&gt; must follow the form
-&lt;mathjax&gt;\begin{align}
-r(\vec{t})=u(\Theta)\frac{\partial\lambda_n}{\partial\Theta}+v(\Theta)
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
+\end{align}
+And thus we get to the Cramer-Rao lower bound. For this to be valid, the statistic $T$ must follow the form
+\begin{align}
+r(\vec{t})=u(\Theta)\frac{\partial\lambda_n}{\partial\Theta}+v(\Theta)&amp;nbsp;\end{align}&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="references"&gt;
@@ -151,37 +94,7 @@ r(\vec{t})=u(\Theta)\frac{\partial\lambda_n}{\partial\Theta}+v(\Theta)
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-&lt;script type= "text/javascript"&gt;
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-    }
-&lt;/script&gt;
-</summary></entry><entry><title>Crystal Clear Collaboration</title><link href="http://markbrown.io/ccc/" rel="alternate"></link><updated>2013-11-28T00:00:00+01:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-11-28:ccc/</id><summary type="html">&lt;a class="reference external image-reference" href="http://crystalclear.web.cern.ch/crystalclear/"&gt;&lt;img alt="Crystal Clear Collaboration" class="align-center" src="../images/CCC.png" style="width: 20%;" /&gt;&lt;/a&gt;
+</summary></entry><entry><title>Crystal Clear Collaboration</title><link href="http://markbrown.io/ccc/" rel="alternate"></link><updated>2013-11-28T00:00:00+01:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-11-28:ccc/</id><summary type="html">&lt;a class="reference external image-reference" href="http://crystalclear.web.cern.ch/crystalclear/"&gt;&lt;img alt="Crystal Clear Collaboration" class="align-center" src="../images/CCC.png" style="width: 20%;" /&gt;&lt;/a&gt;
 &lt;p&gt;The Crystal Clear Collaboration (&lt;span class="caps"&gt;CCC&lt;/span&gt;) homepage may be found &lt;a class="reference external" href="http://crystalclear.web.cern.ch/crystalclear/"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section" id="overview"&gt;
 &lt;h2&gt;Overview&lt;/h2&gt;
@@ -193,9 +106,9 @@ scintillator crystal is given. Finally we will look at the varying contribution 
 &lt;div class="section" id="intrinsic-performance"&gt;
 &lt;h2&gt;Intrinsic&amp;nbsp;Performance&lt;/h2&gt;
 &lt;img alt="intrinsic CRLB with N" class="align-center" src="../images/intrinsicCRLBwithN.png" style="width: 100%;" /&gt;
-&lt;p&gt;In the above image we calculate the lower bound in the &lt;span class="caps"&gt;CTR&lt;/span&gt; (the &lt;span class="caps"&gt;CRLB&lt;/span&gt; &lt;span class="caps"&gt;CTR&lt;/span&gt;) with increasing number of samples, &lt;em&gt;N&lt;/em&gt;. The curve(s) follows the characteristic &lt;mathjax&gt;$\frac{1}{\sqrt{N}}$&lt;/mathjax&gt; shape we&amp;nbsp;expect.&lt;/p&gt;
+&lt;p&gt;In the above image we calculate the lower bound in the &lt;span class="caps"&gt;CTR&lt;/span&gt; (the &lt;span class="caps"&gt;CRLB&lt;/span&gt; &lt;span class="caps"&gt;CTR&lt;/span&gt;) with increasing number of samples, &lt;em&gt;N&lt;/em&gt;. The curve(s) follows the characteristic $\frac{1}{\sqrt{N}}$ shape we&amp;nbsp;expect.&lt;/p&gt;
 &lt;img alt="intrinsic CRLB with various rise &amp;amp; decay times" class="align-center" src="../images/intrinsicCRLBwithDecayRise.png" style="width: 50%;" /&gt;
-&lt;p&gt;Next we look at varying the rise and decay times directly. In this case we fix &lt;mathjax&gt;$N=3600$&lt;/mathjax&gt;. This is chosen as it matches the number of pixels within &lt;a class="reference external" href="http://www.hamamatsu.com/eu/en/product/alpha/P/4113/S10931-050P/index.html"&gt;mppc&lt;/a&gt;. In this case we a clear improvement with reductions in the rise and decay&amp;nbsp;time.&lt;/p&gt;
+&lt;p&gt;Next we look at varying the rise and decay times directly. In this case we fix $N=3600$. This is chosen as it matches the number of pixels within &lt;a class="reference external" href="http://www.hamamatsu.com/eu/en/product/alpha/P/4113/S10931-050P/index.html"&gt;mppc&lt;/a&gt;. In this case we a clear improvement with reductions in the rise and decay&amp;nbsp;time.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="crlb-with-light-transport"&gt;
 &lt;h2&gt;&lt;span class="caps"&gt;CRLB&lt;/span&gt; With Light&amp;nbsp;Transport&lt;/h2&gt;
@@ -207,126 +120,61 @@ scintillator crystal is given. Finally we will look at the varying contribution 
 &lt;h2&gt;&lt;span class="caps"&gt;CRLB&lt;/span&gt; With&amp;nbsp;Photodetector&lt;/h2&gt;
 &lt;img alt="CRLB with photodetector. Varying TTS" class="align-center" src="../images/pmtCRLBwithTTS.png" style="width: 100%;" /&gt;
 &lt;p&gt;We convolve the dual exponential distribution describing the scintillator crystal with a gaussian to describe the single photon
-time spread, with &lt;span class="caps"&gt;FWHM&lt;/span&gt; given by the Single Photon Time Resolution (&lt;span class="caps"&gt;SPTR&lt;/span&gt;) within the photodetector. The number of samples &lt;mathjax&gt;$N$&lt;/mathjax&gt; is fixed at 3600 and we vary the &lt;span class="caps"&gt;SPTR&lt;/span&gt;. In this case it&amp;#8217;s clear the decay time - L(Y)&lt;span class="caps"&gt;SO&lt;/span&gt;:Ce of 40ns compared to 30ns of &lt;span class="caps"&gt;LSO&lt;/span&gt;:CeCa has a large&amp;nbsp;effect.&lt;/p&gt;
+time spread, with &lt;span class="caps"&gt;FWHM&lt;/span&gt; given by the Single Photon Time Resolution (&lt;span class="caps"&gt;SPTR&lt;/span&gt;) within the photodetector. The number of samples $N$ is fixed at 3600 and we vary the &lt;span class="caps"&gt;SPTR&lt;/span&gt;. In this case it&amp;#8217;s clear the decay time - L(Y)&lt;span class="caps"&gt;SO&lt;/span&gt;:Ce of 40ns compared to 30ns of &lt;span class="caps"&gt;LSO&lt;/span&gt;:CeCa has a large&amp;nbsp;effect.&lt;/p&gt;
 &lt;img alt="skew normal distribution" class="align-center" src="../images/skewnormaldist.png" style="width: 100%;" /&gt;
 &lt;p&gt;Next we look at a non-symmetric &lt;span class="caps"&gt;SPTR&lt;/span&gt; distribution; Namely the skew-normal distribution shown above in red for negative skew and in blue for positive. The green line indicates the normal&amp;nbsp;Gaussian.&lt;/p&gt;
 &lt;img alt="CRLB for non-zero skew with increasing FWHM" class="align-center" src="../images/pmtCRLBwithFWHM.png" style="width: 100%;" /&gt;
 &lt;p&gt;Above we use the skew-normal distribution for various &lt;span class="caps"&gt;FWHM&lt;/span&gt; values to determine the &lt;span class="caps"&gt;CRLB&lt;/span&gt; with skew. As the &lt;span class="caps"&gt;FWHM&lt;/span&gt; of the &lt;span class="caps"&gt;SPTR&lt;/span&gt; distribution will vary with skew we see that the skewness must be determind to accurately predict the &lt;span class="caps"&gt;CRLB&lt;/span&gt;.&lt;/p&gt;
 &lt;/div&gt;
-&lt;script type= "text/javascript"&gt;
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-    }
-&lt;/script&gt;
-</summary><category term="ccc"></category><category term="crlb"></category><category term="scintillator"></category></entry><entry><title>Light Transport</title><link href="http://markbrown.io/ccc/lightransport.html" rel="alternate"></link><updated>2013-11-28T00:00:00+01:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-11-28:ccc/lightransport.html</id><summary type="html">&lt;div class="section" id="analytical-light-transport"&gt;
+</summary><category term="ccc"></category><category term="crlb"></category><category term="scintillator"></category></entry><entry><title>Light Transport</title><link href="http://markbrown.io/ccc/lightransport.html" rel="alternate"></link><updated>2013-11-28T00:00:00+01:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-11-28:ccc/lightransport.html</id><summary type="html">&lt;div class="section" id="analytical-light-transport"&gt;
 &lt;h2&gt;Analytical Light&amp;nbsp;Transport&lt;/h2&gt;
 &lt;img alt="Specular PDF from Analytical Expression" class="align-center" src="../images/SpecularPDFAnalytical.png" style="width: 100%;" /&gt;
-&lt;p&gt;On this page we will give the derivation for the specular &lt;span class="caps"&gt;PDF&lt;/span&gt;, &lt;mathjax&gt;$p(t)$&lt;/mathjax&gt;. The analytical expression is shown above as a sum of two modes; Namely the forward and backward, corresponding to light transport within a regular cuboid scintillator crystal of dimensions &lt;mathjax&gt;$2\times2\times20$&lt;/mathjax&gt;mm&lt;mathjax&gt;$^3$&lt;/mathjax&gt;, with a depth of interaction (&lt;span class="caps"&gt;DOI&lt;/span&gt;) of&amp;nbsp;10mm.&lt;/p&gt;
+&lt;p&gt;On this page we will give the derivation for the specular &lt;span class="caps"&gt;PDF&lt;/span&gt;, $p(t)$. The analytical expression is shown above as a sum of two modes; Namely the forward and backward, corresponding to light transport within a regular cuboid scintillator crystal of dimensions $2\times2\times20$mm$^3$, with a depth of interaction (&lt;span class="caps"&gt;DOI&lt;/span&gt;) of&amp;nbsp;10mm.&lt;/p&gt;
 &lt;img alt="Specular PDF from Monte Carlo" class="align-center" src="../images/SpecularPDFMonteCarlo.png" style="width: 100%;" /&gt;
 &lt;p&gt;The above image is the specular &lt;span class="caps"&gt;PDF&lt;/span&gt; taken from Monte-Carlo ray tracing of a regular&amp;nbsp;cuboid.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-derivation"&gt;
 &lt;h2&gt;The&amp;nbsp;Derivation&lt;/h2&gt;
-&lt;p&gt;We begin by looking at an isotropic source placed between two infinite faces. The source is a distance, &lt;span class="caps"&gt;DOI&lt;/span&gt;, from one face, which we shall refer to as the top face. The opposing face shall be referred to as the bottom face. The two faces are separated by a distance &lt;mathjax&gt;$L$&lt;/mathjax&gt;. Between the two faces the refractive index is &lt;mathjax&gt;$n_s$&lt;/mathjax&gt;. Using the time-averaged Poynting vector incident per unit solid angle, , the power (&lt;mathjax&gt;$P$&lt;/mathjax&gt;) per unit solid angle, can be defined as
-&lt;mathjax&gt;\begin{align}
+&lt;p&gt;We begin by looking at an isotropic source placed between two infinite faces. The source is a distance, &lt;span class="caps"&gt;DOI&lt;/span&gt;, from one face, which we shall refer to as the top face. The opposing face shall be referred to as the bottom face. The two faces are separated by a distance $L$. Between the two faces the refractive index is $n_s$. Using the time-averaged Poynting vector incident per unit solid angle, , the power ($P$) per unit solid angle, can be defined as
+\begin{align}
 \frac{dP}{d\Omega} = \frac{r^2}{2}\vec{n}.\vec{E}\times\vec{H^*}
-\end{align}&lt;/mathjax&gt;
-where &lt;mathjax&gt;$\vec{n}$&lt;/mathjax&gt; is the direction of interest, &lt;mathjax&gt;$\vec{E}$&lt;/mathjax&gt; is the electric field, &lt;mathjax&gt;$\vec{H}^*$&lt;/mathjax&gt; is the complex conjugate of the magnetic field and &lt;mathjax&gt;$\Omega$&lt;/mathjax&gt; is the solid angle subtended. For a spherical wave we therefore find
-&lt;mathjax&gt;\begin{align}
-\begin{pmatrix}\vec{E} \\\\ \vec{H}\end{pmatrix} &amp;amp;= A_0\begin{pmatrix}\hat{\theta} \\\\ \hat{\phi}\end{pmatrix}\frac{1}{r}e^{i\vec{k}.\vec{r}}e^{-i\omega t}\\\\
-\therefore \frac{dP}{d\Omega} &amp;amp;= \frac{A_0^2}{2}\vec{n}.\vec{r}
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;By letting &lt;mathjax&gt;$\vec{n}=\vec{r}$&lt;/mathjax&gt;, we find the power per unit solid angle is constant regardless of direction. This is as expected for an isotropic source. Integrating over the solid angle with ranges &lt;mathjax&gt;$\{\theta,\theta_1,\theta_2\}$&lt;/mathjax&gt; and &lt;mathjax&gt;$\{\phi,0,2\pi\}$&lt;/mathjax&gt; it can be shown&amp;nbsp;that&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;\begin{align}
-P(\theta_1,\theta_2) &amp;amp;= \int \frac{dP}{d\Omega} d\Omega = \frac{A_0^2}{2}\int\limits_{\phi=0}^{2\pi}\int\limits_{\theta=\theta_1}^{\theta_2}\sin\theta d\theta d\phi \\\\
-&amp;amp;=\pi A_0^2(\cos\theta_1-\cos\theta_2)
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;Consider &lt;mathjax&gt;$\theta_1$&lt;/mathjax&gt; is zero with &lt;mathjax&gt;$\theta_2=\theta$&lt;/mathjax&gt; we arrive at
-&lt;mathjax&gt;\begin{align}
-P(\theta) &amp;amp;= \pi A_0^2(1-\cos\theta)\\\\
+\end{align}
+where $\vec{n}$ is the direction of interest, $\vec{E}$ is the electric field, $\vec{H}^*$ is the complex conjugate of the magnetic field and $\Omega$ is the solid angle subtended. For a spherical wave we therefore find
+\begin{align}
+\begin{pmatrix}\vec{E} &amp;#92;&amp;#92; \vec{H}\end{pmatrix} &amp;amp;= A_0\begin{pmatrix}\hat{\theta} &amp;#92;&amp;#92; \hat{\phi}\end{pmatrix}\frac{1}{r}e^{i\vec{k}.\vec{r}}e^{-i\omega t}&amp;#92;&amp;#92;
+\therefore \frac{dP}{d\Omega} &amp;amp;= \frac{A_0^2}{2}\vec{n}.\vec{r}&amp;nbsp;\end{align}&lt;/p&gt;
+&lt;p&gt;By letting $\vec{n}=\vec{r}$, we find the power per unit solid angle is constant regardless of direction. This is as expected for an isotropic source. Integrating over the solid angle with ranges $\{\theta,\theta_1,\theta_2\}$ and $\{\phi,0,2\pi\}$ it can be shown&amp;nbsp;that&lt;/p&gt;
+&lt;p&gt;\begin{align}
+P(\theta_1,\theta_2) &amp;amp;= \int \frac{dP}{d\Omega} d\Omega = \frac{A_0^2}{2}\int\limits_{\phi=0}^{2\pi}\int\limits_{\theta=\theta_1}^{\theta_2}\sin\theta d\theta d\phi &amp;#92;&amp;#92;
+&amp;amp;=\pi A_0^2(\cos\theta_1-\cos\theta_2)&amp;nbsp;\end{align}&lt;/p&gt;
+&lt;p&gt;Consider $\theta_1$ is zero with $\theta_2=\theta$ we arrive at
+\begin{align}
+P(\theta) &amp;amp;= \pi A_0^2(1-\cos\theta)&amp;#92;&amp;#92;
 F(\theta) = \frac{P}{P_0} &amp;amp;= \frac{1}{2}(1-\cos\theta)
-\end{align}&lt;/mathjax&gt;
-where &lt;mathjax&gt;$P_0$&lt;/mathjax&gt; is total power emitted into the full &lt;mathjax&gt;$4\pi$&lt;/mathjax&gt; sphere which can be seen to be &lt;mathjax&gt;$2\pi A_0^2$&lt;/mathjax&gt;. To find the power per unit angle consider &lt;mathjax&gt;$\theta_1=\theta$&lt;/mathjax&gt; and &lt;mathjax&gt;$\theta_2=\theta+d\theta$&lt;/mathjax&gt;, such that
-&lt;mathjax&gt;\begin{align}
-dP &amp;amp;= \frac{P_0}{2}(\cos\theta - \cos(\theta+d\theta))\\\\
-\therefore \frac{1}{P_0}\frac{dP}{d\theta}&amp;amp;=\frac{1}{2}\sin\theta
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;For an isotropic source a distance &lt;mathjax&gt;$z$&lt;/mathjax&gt; from the boundary we see
-&lt;mathjax&gt;\begin{align}
+\end{align}
+where $P_0$ is total power emitted into the full $4\pi$ sphere which can be seen to be $2\pi A_0^2$. To find the power per unit angle consider $\theta_1=\theta$ and $\theta_2=\theta+d\theta$, such that
+\begin{align}
+dP &amp;amp;= \frac{P_0}{2}(\cos\theta - \cos(\theta+d\theta))&amp;#92;&amp;#92;
+\therefore \frac{1}{P_0}\frac{dP}{d\theta}&amp;amp;=\frac{1}{2}\sin\theta&amp;nbsp;\end{align}&lt;/p&gt;
+&lt;p&gt;For an isotropic source a distance $z$ from the boundary we see
+\begin{align}
 t(\theta) = \frac{n\text{z}}{c}\frac{1}{\cos\theta} = \frac{t_0}{\cos\theta}
-\end{align}&lt;/mathjax&gt;
-&lt;mathjax&gt;\begin{align}
+\end{align}
+\begin{align}
 \frac{d\theta}{dt}=\frac{1}{t_0}\frac{\cos^2\theta}{\sin\theta}
-\end{align}&lt;/mathjax&gt;
-where &lt;mathjax&gt;$c$&lt;/mathjax&gt; is the speed of light and &lt;mathjax&gt;$t_0$&lt;/mathjax&gt; is the minimum time to the top face. Combining this with the power per unit theta, results in the rate of change of power with time giving,
-&lt;mathjax&gt;\begin{align}
+\end{align}
+where $c$ is the speed of light and $t_0$ is the minimum time to the top face. Combining this with the power per unit theta, results in the rate of change of power with time giving,
+\begin{align}
 \frac{dP}{dt} = \frac{t_0P_0}{2}\frac{1}{t^2}
-\end{align}&lt;/mathjax&gt;
-Given a maximum allowed travel time, &lt;mathjax&gt;$t_1$&lt;/mathjax&gt;, due to the critical angle of the boundary, a &lt;span class="caps"&gt;PDF&lt;/span&gt; defining the light transport, &lt;mathjax&gt;$p(t)$&lt;/mathjax&gt;, can be found&amp;nbsp;by&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;\begin{align}
-p(t)= A\frac{t_0P_0}{2}\int\limits_{t=t_0}^{t_1}\frac{1}{t^2}dt = 1
-\end{align}&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;where &lt;mathjax&gt;$t_1=\frac{t_0}{\cos\theta_c}$&lt;/mathjax&gt; the &lt;span class="caps"&gt;PDF&lt;/span&gt; defining light transport for the perfectly specular case is given&amp;nbsp;by&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;\begin{equation}
-p(t|t_0,\theta_c) = \frac{t_0}{1-\cos\theta_c}\frac{1}{t^2}
-\end{equation}&lt;/mathjax&gt;&lt;/p&gt;
+\end{align}
+Given a maximum allowed travel time, $t_1$, due to the critical angle of the boundary, a &lt;span class="caps"&gt;PDF&lt;/span&gt; defining the light transport, $p(t)$, can be found&amp;nbsp;by&lt;/p&gt;
+&lt;p&gt;\begin{align}
+p(t)= A\frac{t_0P_0}{2}\int\limits_{t=t_0}^{t_1}\frac{1}{t^2}dt = 1&amp;nbsp;\end{align}&lt;/p&gt;
+&lt;p&gt;where $t_1=\frac{t_0}{\cos\theta_c}$ the &lt;span class="caps"&gt;PDF&lt;/span&gt; defining light transport for the perfectly specular case is given&amp;nbsp;by&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+p(t|t_0,\theta_c) = \frac{t_0}{1-\cos\theta_c}\frac{1}{t^2}&amp;nbsp;\end{equation}&lt;/p&gt;
 &lt;/div&gt;
-&lt;script type= "text/javascript"&gt;
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-    }
-&lt;/script&gt;
-</summary><category term="light"></category><category term="specular"></category></entry><entry><title>University College London Beamer Template</title><link href="http://markbrown.io/university-college-london-beamer-template.html" rel="alternate"></link><updated>2013-07-14T00:00:00+02:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-07-14:university-college-london-beamer-template.html</id><summary type="html">&lt;img alt="Ugly, yellow example image" src="/images/beamerexample.png" style="width: 80%;" /&gt;
+</summary><category term="light"></category><category term="specular"></category></entry><entry><title>University College London Beamer Template</title><link href="http://markbrown.io/university-college-london-beamer-template.html" rel="alternate"></link><updated>2013-07-14T00:00:00+02:00</updated><author><name>Mark</name></author><id>tag:markbrown.io,2013-07-14:university-college-london-beamer-template.html</id><summary type="html">&lt;img alt="Ugly, yellow example image" src="/images/beamerexample.png" style="width: 80%;" /&gt;
 &lt;p&gt;In this post I&amp;#8217;ll briefly go over my &lt;span class="caps"&gt;UCL&lt;/span&gt; template for Beamer&amp;nbsp;presentations.&lt;/p&gt;
 &lt;p&gt;Why &lt;a class="reference external" href="http://www.latex-project.org/"&gt;LaTeX&lt;/a&gt;?&lt;/p&gt;
 &lt;ul class="simple"&gt;
